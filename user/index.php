@@ -29,9 +29,9 @@
     #rcorners1 {
       border-radius: 25px;
       background: rgba(245, 238, 255, 0.5);
-      padding: 20px;
-      width: 400px;
-      height: 600px;
+      padding: 50px;
+      width: auto;
+      height: auto;
     }
 
     .sb {
@@ -64,6 +64,11 @@
       <div class="text-white d-flex justify-content-center my-4" style="font-size: 40px">
         <div id="rcorners1">
           <!-- isi kotak   -->
+          <form class="form" name="optimumpride">
+            <label for="apaini" class="form-label">Optimum Pride</label>
+            <input type="text" name="apaini">
+            <input type="submit" class="btn-primary" value="bruh">
+          </form>
         </div>
       </div>
     </div>
