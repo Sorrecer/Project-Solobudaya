@@ -19,8 +19,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
-        <div class="container container-fluid">
-            <a href="../user/index.php" class="navbar-brand">Kenny Lib</a>
-        </div>
+    <nav class="navbar navbar-expand-md navbar-white bg-white">
+        <a class="navbar-brand" href="#">
+            <img src="../logo1.png" width="150" height="30" class="d-inline-block align-top" alt="">
+        </a>
     </nav>

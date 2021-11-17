@@ -1,8 +1,8 @@
-    <footer class="fixed-bottom bg-dark text-center text-white text-lg-start">
+    <footer class="fixed-bottom bg-white text-center text-dark text-sm-start">
         <!-- Copyright -->
-        <div class="text-center p-3">
+        <div class="text-center p-1">
             © 2021
-            <a class="text-white" href="../index.php" target="_blank">Kenny Lib</a>
+            <a class="text-dark" href="../index.php" target="_blank">SoloBudaya</a>
         </div>
         <!-- Copyright -->
     </footer>
