@@ -11,7 +11,7 @@
   <style>
     .column {
       float: right;
-      width: 50%;
+      width: 40%;
     }
 
     .column1 {
@@ -43,27 +43,31 @@
 </head>
 
 <body>
-  <div class="column1">
-    <div class="text-white d-block justify-content-center my-4" style="font-size:30px">
-      <div>
-        <img class="sb" src="../sb1.png" width="250" height="60" class="d--block align-top" alt="">
+  <!-- kolom kiri -->
+  <div class="container my-1">
+    <div class="column1">
+      <div class="text-white d-block justify-content-center my-4" style="font-size:30px">
+        <div>
+          <img class="sb" src="../sb1.png" width="250" height="60" class="d--block align-top" alt="">
+        </div>
+        <div class="container d-grid my-1  " style="font-size: 70px; left :auto;"><b> Mengenal Budaya <br>Indonesia dengan<br> Menyenangkan</b>
+        </div>
+        <div>
+          <img src="../peta1.png" width="500" height="200" class="d--block align-top" alt="">
+        </div>
       </div>
-      <div class="container d-grid my-1  " style="font-size: 70px; left :auto;"><b> Mengenal Budaya <br>Indonesia dengan<br> Menyenangkan</b>
-      </div>
-      <div>
-        <img src="../peta1.png" width="500" height="200" class="d--block align-top" alt="">
+    </div>
+
+    <!-- kolom kanan -->
+    <div class="column">
+      <!-- form login -->
+      <div class="text-white d-flex justify-content-center my-4" style="font-size: 40px">
+        <div id="rcorners1">
+          <!-- isi kotak   -->
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="column">
-    <div class="text-white d-flex justify-content-center my-4" style="font-size: 40px">
-      <div id="rcorners1">
-
-      </div>
-    </div>
-  </div>
-
 </body>
 
 <?php include("../lib/footer.php"); ?>
