@@ -19,6 +19,11 @@
 </head>
 
 <body>
+    <!-- php pada setiap header -->
+    <?php
+        session_start();
+    ?>
+
     <nav class="navbar navbar-expand-md navbar-white bg-white">
         <a class="navbar-brand" href="#">
             <img src="../logo1.png" width="150" height="30" class="d-inline-block align-top" alt="" style="margin-left: 30px;">
