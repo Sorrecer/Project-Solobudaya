@@ -2,7 +2,7 @@
         <!-- Copyright -->
         <div class="text-center p-1">
             © 2021
-            <a class="text-dark" href="../index.php" target="_blank">SoloBudaya</a>
+            <a class="text-dark" href="#" target="_blank">SoloBudaya</a>
         </div>
         <!-- Copyright -->
     </footer>

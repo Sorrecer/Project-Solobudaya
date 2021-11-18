@@ -1,4 +1,4 @@
-<?php include("../lib/header.php"); ?>
+<?php include("../lib/header-buat-akun.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -68,7 +68,7 @@
                     </div>
                     <div class="container d-flex justify-content-center">
                         <div class="form-group">
-                            <button type="submit" name="tambah" class="btn btn-dark btn-lg mx-2">Daftar</button>
+                            <button type="submit" name="tambah" class="btn btn-success btn-lg mx-2">Daftar</button>
                         </div>
                         <div class="form-group">
                             <a href="index.php" class="btn btn-danger btn-lg mx-2">Cancel</a>

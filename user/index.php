@@ -128,7 +128,7 @@
               <button type="submit" class="btn-grad" name="submit" value="submit" style="font-size: 15px;">Login</button>
           </form>
         </div>
-        <div class="container my-4" style="font-size: 15px;text-align: center;font-weight: bold;"> Belum Buat Akun? Yuk Buat Akun! <br>
+        <div class="container" style="font-size: 15px;text-align: center;font-weight: bold; padding-top: 50px;"> Belum Buat Akun? Yuk Buat Akun! <br>
           <a href="buatakun.php">
             <button class="btn btn-grad btn-center my-3">
               Buat Akun
