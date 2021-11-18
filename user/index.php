@@ -34,9 +34,17 @@
       height: auto;
     }
 
+    A {
+      text-decoration: none;
+    }
+
     .sb {
       position: relative;
       left: 20px;
+    }
+
+    .form-label {
+      font-weight: bold;
     }
 
     .buttonlogin {
@@ -51,12 +59,37 @@
       border-radius: 12px;
       color: white;
       padding: 8px 32px;
+      font-size: 15px;
+    }
+
+    .btn-grad {
+      background-image: linear-gradient(to right, #000000 0%, #53346D 30%, #aa3bff 75%)
+    }
+
+    .btn-grad {
+      margin: center;
+      padding: 8px 32px;
+      text-align: center;
+      font-weight: bold;
+      transition: 0.4s;
+      background-size: 250% auto;
+      color: white;
+      border-radius: 10px;
+
+    }
+
+    .btn-grad:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
     }
   </style>
 
 </head>
 
 <body>
+
   <div class="container my-1">
     <!-- kolom kiri -->
     <div class="column1">
@@ -75,29 +108,35 @@
     <!-- kolom kanan -->
     <div class="column">
       <!-- form login -->
-      <div style="font-size: 25px; color: purple; padding:50px">
+      <div style="font-size: 20px; color: purple; padding:50px">
         <div id="rcorners1">
           <!-- isi kotak   -->
           <div class="container" style="font-size: 25px;  ; text-align: center;font-weight: bold;"> Masuk SoloBudaya dan mulai belajar banyak kebudayaan Indonesia! </div>
           <!-- username -->
           <div class="container my-3"></div>
           <form class="form" name="login">
-            <label for="username" class="form-label">Username</label><br>
-            <input type="text" name="username"><br>
-            <!-- password -->
-            <label for="password" class="form-label">Password</label><br>
-            <input type="password" name="password"><br>
+            <label for="username" class="form-label" style="text-align: center;">Username</label><br>
             <div class="container" style="text-align: center">
-              <button type="submit" class="buttonlogin my-4" name="submit" value="submit">Login</button>
-              <div class="container my-3" style="font-size: 15px;  ; text-align: center;font-weight: bold"> Belum Buat Akun? Yuk Buat Akun! </div>
-              <button href="#" class="buatakun my-1">Buat Akun</button>
+              <input type="text" class="form-control" name="username"><br>
             </div>
+            <!-- password -->
+            <label for="password" class="form-label" style="text-align: center; left: 20px">Password</label><br>
+            <div class="container" style="text-align: center">
+              <input type="password" class="form-control" name="password"><br>
+            </div>
+            <div class="container" style="text-align: center">
+              <button type="submit" class="btn-grad" name="submit" value="submit" style="font-size: 15px;">Login</button>
+          </form>
         </div>
-        </form>
+        <div class="container my-4" style="font-size: 15px;text-align: center;font-weight: bold;"> Belum Buat Akun? Yuk Buat Akun! <br>
+          <a href="buatakun.php">
+            <button class="btn btn-grad btn-center my-3">
+              Buat Akun
+            </button>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
 </body>
 
 <?php include("../lib/footer.php"); ?>
