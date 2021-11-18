@@ -29,7 +29,7 @@
     #rcorners1 {
       border-radius: 25px;
       background: rgba(245, 238, 255, 0.5);
-      padding: 50px;
+      padding: 40px;
       width: auto;
       height: auto;
     }
@@ -67,7 +67,7 @@
         <div class="container d-grid my-1  " style="font-size: 70px; left :auto;"><b> Mengenal Budaya <br>Indonesia dengan<br> Menyenangkan</b>
         </div>
         <div>
-          <img src="../peta1.png" width="500" height="200" class="d--block align-top" alt="">
+          <img src="../peta1.png" width="700" height="280" class="d--block align-top" alt="">
         </div>
       </div>
     </div>
@@ -75,10 +75,10 @@
     <!-- kolom kanan -->
     <div class="column">
       <!-- form login -->
-      <div class="my-4" style="font-size: 25px; color: purple">
+      <div style="font-size: 25px; color: purple; padding:50px">
         <div id="rcorners1">
           <!-- isi kotak   -->
-          <div class="container" style="font-size: 20px; width:60%; text-align: center;font-weight: bold;"> Masuk SoloBudaya dan mulai belajar banyak kebudayaan Indonesia! </div>
+          <div class="container" style="font-size: 25px;  ; text-align: center;font-weight: bold;"> Masuk SoloBudaya dan mulai belajar banyak kebudayaan Indonesia! </div>
           <!-- username -->
           <div class="container my-3"></div>
           <form class="form" name="login">
@@ -89,8 +89,8 @@
             <input type="password" name="password"><br>
             <div class="container" style="text-align: center">
               <button type="submit" class="buttonlogin my-4" name="submit" value="submit">Login</button>
-              <div class="container" style="font-size: 20px; width:60%; text-align: center;font-weight: bold"> Belum Buat Akun? Yuk Buat Akun! </div>
-              <button href="" class="buatakun my-4">Buat Akun</button>
+              <div class="container my-3" style="font-size: 15px;  ; text-align: center;font-weight: bold"> Belum Buat Akun? Yuk Buat Akun! </div>
+              <button href="#" class="buatakun my-1">Buat Akun</button>
             </div>
         </div>
         </form>
