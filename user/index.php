@@ -38,13 +38,27 @@
       position: relative;
       left: 20px;
     }
+
+    .buttonlogin {
+      background-color: purple;
+      border-radius: 12px;
+      color: white;
+      padding: 8px 32px;
+    }
+
+    .buatakun {
+      background-color: purple;
+      border-radius: 12px;
+      color: white;
+      padding: 8px 32px;
+    }
   </style>
 
 </head>
 
 <body>
-  <!-- kolom kiri -->
   <div class="container my-1">
+    <!-- kolom kiri -->
     <div class="column1">
       <div class="text-white d-block justify-content-center my-4" style="font-size:30px">
         <div>
@@ -61,17 +75,28 @@
     <!-- kolom kanan -->
     <div class="column">
       <!-- form login -->
-      <div class="text-white d-flex justify-content-center my-4" style="font-size: 40px">
+      <div class="my-4" style="font-size: 25px; color: purple">
         <div id="rcorners1">
           <!-- isi kotak   -->
-          <form class="form" name="optimumpride">
-            <label for="apaini" class="form-label">Optimum Pride</label>
-            <input type="text" name="apaini">
-            <input type="submit" class="btn-primary" value="bruh">
-          </form>
+          <div class="container" style="font-size: 20px; width:60%; text-align: center;font-weight: bold;"> Masuk SoloBudaya dan mulai belajar banyak kebudayaan Indonesia! </div>
+          <!-- username -->
+          <div class="container my-3"></div>
+          <form class="form" name="login">
+            <label for="username" class="form-label">Username</label><br>
+            <input type="text" name="username"><br>
+            <!-- password -->
+            <label for="password" class="form-label">Password</label><br>
+            <input type="password" name="password"><br>
+            <div class="container" style="text-align: center">
+              <button type="submit" class="buttonlogin my-4" name="submit" value="submit">Login</button>
+              <div class="container" style="font-size: 20px; width:60%; text-align: center;font-weight: bold"> Belum Buat Akun? Yuk Buat Akun! </div>
+              <button href="" class="buatakun my-4">Buat Akun</button>
+            </div>
         </div>
+        </form>
       </div>
     </div>
+  </div>
   </div>
 </body>
 
