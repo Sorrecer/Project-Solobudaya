@@ -113,7 +113,7 @@
           <!-- isi kotak   -->
           <div class="container" style="font-size: 25px;  ; text-align: center;font-weight: bold;"> Masuk SoloBudaya dan mulai belajar banyak kebudayaan Indonesia! </div>
           <!-- username -->
-          <div class="container my-3"></div>
+          <div class="container my-5"></div>
           <form class="form" name="login">
             <label for="username" class="form-label" style="text-align: center;">Username</label><br>
             <div class="container" style="text-align: center">
