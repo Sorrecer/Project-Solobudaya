@@ -23,5 +23,5 @@
         <a class="navbar-brand" href="#">
             <img src="../logo2.png" width="25" height="30" class="d-inline-block align-top" alt="" style="margin-left: 30px;">
         </a>
-        <div class="text-dark" style="font-weight: bold;">Beranda</div>
+        <div class="text-dark" style="font-weight: bold; font-size: 25px;">Beranda</div>
     </nav>
