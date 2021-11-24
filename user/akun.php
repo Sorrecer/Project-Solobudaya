@@ -31,8 +31,31 @@
             height: auto;
         }
 
+        .btn-grad2 {
+            background-image: linear-gradient(to right, #f50076 0%, #f50076 30%, #ff9ccb 75%)
+        }
+
+        .btn-grad2 {
+            margin: center;
+            padding: 8px 32px;
+            text-align: center;
+            font-weight: bold;
+            transition: 0.4s;
+            background-size: 250% auto;
+            color: white;
+            border-radius: 10px;
+
+        }
+
+        .btn-grad2:hover {
+            background-position: right center;
+            /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+
         .btn-grad {
-            background-image: linear-gradient(to right, #000000 0%, #53346D 30%, #aa3bff 75%)
+            background-image: linear-gradient(to right, #56009c 0%, #56009c 30%, #aa3bff 75%)
         }
 
         .btn-grad {
@@ -67,19 +90,44 @@
                 <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan</div>
             </div>
             <div class="container my-4" style="text-align: center; padding-top: 100px;">
-                <img src="../joshiraku.gif" height="70%">
+                <input type="text" class="form-control" id="deskripsi" name="deskripsi" style="height: 200px; text-align:center" value="Deskripsikan Diri Anda...">
             </div>
         </div>
 
         <!-- kolom kanan -->
         <div class="column2" style="background-color: rgba(177, 177, 177, 0.5); padding:50px; height: 1000px;">
             <!-- isi kotak   -->
-            <div class="container" style="text-align: center; padding-top: 50px;">
-                <img src="../profile.png" width="40%">
-                <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan</div>
+            <!-- bergabung -->
+            <div class="container" style="text-align: center; padding-top: 50px; width:100%;">
+                <div style="text-align: center; background-color: rgba(255, 255, 255, 0.5); height:50px;font-weight: bold; border-radius: 10px">
+                    <img src=" ../logo2.png" height="35px" width="25px">
+                    <class="text-dark" style="font-weight: bold; font-size: 25px; padding-left: 15px;">Bergabung tanggal 2 April 2021</class>
+                </div>
             </div>
-            <div class="container my-4" style="text-align: center; padding-top: 100px;">
-                <img src="../joshiraku.gif" height="70%">
+            <!-- course selesai -->
+            <div class="container" style="text-align: center; padding-top: 50px; width:100%;">
+                <div style="text-align: center; background-color: rgba(255, 255, 255, 0.5); height:50px;font-weight: bold; border-radius: 10px">
+                    <class="text-dark" style="font-weight: bold; font-size: 25px;">69</class>
+                        <class="text-dark" style="font-weight: bold; font-size: 25px;">Course telah diselesaikan</class>
+                </div>
+            </div>
+
+            <div class="container my-4" style="text-align: center; padding-top: 300px;">
+                <div class="container" style="text-align: center">
+                    <a href="ubah-password.php">
+                        <button class="btn-grad  btn-center" style="font-size: 30px; align-content: center; width:80%">
+                            Ubah Password
+                        </button>
+                    </a>
+                </div>
+                <div class=" container" style="text-align: center; padding-top: 20px">
+                    <a href="ubah-password.php">
+                        <button class="btn-grad2 btn-center" style="font-size: 30px; align-content: center; width:80%">
+                            Keluar
+                            <img src=" ../logo-pintu.png" height="35px" width="25px" style="">
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

@@ -73,7 +73,7 @@
                 </div>
                 <div class="container" style="text-align: center">
                     <a href="pilih_peta.php">
-                        <button class="btn btn-akun btn-center" style="font-size: 30px; align-content: center;">
+                        <button class="btn btn-grad btn-center" style="font-size: 30px; align-content: center;">
                             MULAI BELAJAR
                         </button>
                     </a>
