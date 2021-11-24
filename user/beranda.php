@@ -73,7 +73,7 @@
                 </div>
                 <div class="container" style="text-align: center">
                     <a href="pilih_peta.php">
-                        <button class="btn btn-grad btn-center" style="font-size: 30px; align-content: center;">
+                        <button class="btn btn-akun btn-center" style="font-size: 30px; align-content: center;">
                             MULAI BELAJAR
                         </button>
                     </a>
@@ -81,7 +81,7 @@
             </div>
             <div class="row" style="padding-top: 50px; padding-bottom: 50px;">
                 <div class="column" style="height: autopx;padding-left: 50px;">
-                    <div id="rcorners1" style="height: 340px;">
+                    <div id="rcorners1" style="height: 350px;">
                         <table class="table table-light" style="font-weight: bold;">
                             <thead>
                                 <tr>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="column" style="height: auto; padding-right: 50px;">
-                    <div id="rcorners1" style="height: 340px;">
+                    <div id="rcorners1" style="height: 350px;">
                         <table class="table" style="font-weight: bold; border: 5px solid purple;">
                             <thead>
                                 <tr>
