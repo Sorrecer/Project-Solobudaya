@@ -19,8 +19,15 @@
             height: auto;
         }
 
-        .sumatera {
+        #sumatera {
             position: relative;
+            top: 150px;
+            left: 0px;
+        }
+
+        #sumatera:hover {
+            width: 20%;
+            background: url('../sumatera-hover.png');
             top: 150px;
             left: 0px;
         }
@@ -61,12 +68,12 @@
     <div class="container justify-content-center" style="text-align:center;font-weight:bolder;font-size: 50px; color:indigo;padding-top:50px">
         PILIH DAN MULAI BELAJAR!
         <div>
-            <img class="sumatera" src="../sumatera.png" width="20%">
-            <img class="jawa" src="../jawa.png" width="20%">
-            <img class="kalimantan" src="../kalimantan.png" width="20%">
-            <img class="sulawesi" src="../sulawesi.png" width="20%">
-            <img class="ntt" src="../ntt.png" width="20%">
-            <img class="papua" src="../papua.png" width="20%">
+            <img id="sumatera" src="../images/sumatera.png" width="20%">
+            <img class="jawa" src="../images/jawa.png" width="20%">
+            <img class="kalimantan" src="../images/kalimantan.png" width="20%">
+            <img class="sulawesi" src="../images/sulawesi.png" width="20%">
+            <img class="ntt" src="../images/ntt.png" width="20%">
+            <img class="papua" src="../images/papua.png" width="20%">
         </div>
     </div>
     <?php include("../lib/footer.php"); ?>

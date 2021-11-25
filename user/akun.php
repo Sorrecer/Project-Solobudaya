@@ -86,15 +86,15 @@
         <!-- kolom kiri -->
         <div class="column1" style="background-color: rgba(255, 255, 255, 0.5); padding:50px; height: 1000px;">
             <div class="container" style="text-align: center; padding-top: 50px; position: relative; top:0px; left:0px;">
-                <img src="../profile.png" width="40%" style="position:relative; top:0px; left:0px;" alt="userprofile">
+                <img src="../images/profile.png" width="40%" style="position:relative; top:0px; left:0px;" alt="userprofile">
                 <a href="ubah_profile.php">
-                    <input type="image" src="../editprofilicon.png" width="12%" style="position:absolute; top:190px; left:310px;" alt="editprofilicon" name="test" class="btTxt submit" id="test" />
+                    <input type="image" src="../images/editprofilicon.png" width="12%" style="position:absolute; top:190px; left:310px;" alt="editprofilicon" name="test" class="btTxt submit" id="test" />
                 </a>
                 <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan</div>
             </div>
             <div class="container my-4" style="text-align: center; padding-top: 100px;">
                 <textarea class="form-control" id="deskripsi" name="deskripsi" style="height: 200px; text-align:justify;" placeholder=" Deskripsikan Diri Anda..."></textarea>
-            </div> 
+            </div>
         </div>
 
         <!-- kolom kanan -->
@@ -127,7 +127,7 @@
                     <a href="ubah-password.php">
                         <button class="btn-grad2 btn-center" style="font-size: 30px; align-content: center; width:80%">
                             Keluar
-                            <img src=" ../logo-pintu.png" height="35px" width="25px" style="" alt="logouticon">
+                            <img src=" ../images/logo-pintu.png" height="35px" width="25px" style="" alt="logouticon">
                         </button>
                     </a>
                 </div>

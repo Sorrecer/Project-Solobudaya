@@ -67,7 +67,7 @@
                     <div id="rcorners1">
                         <!-- gambar -->
                         <div>
-                            <img src="../peta2.png" width="100%" height="100%">
+                            <img src="../images/peta2.png" width="100%" height="100%">
                         </div>
                     </div>
                 </div>
@@ -163,11 +163,11 @@
                         </a>
                     </div>
                     <div class="container" style="text-align: center; padding-top: 50px;">
-                        <img src="../profile.png" width="40%">
+                        <img src="../images/profile.png" width="40%">
                         <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan</div>
                     </div>
                     <div class="container my-4" style="text-align: center; padding-top: 100px;">
-                        <img src="../joshiraku.gif" width="70%">
+                        <img src="../images/joshiraku.gif" width="70%">
                     </div>
                 </div>
             </div>
