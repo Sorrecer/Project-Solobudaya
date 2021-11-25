@@ -18,11 +18,55 @@
             width: 60%;
             height: auto;
         }
+
+        .sumatera {
+            position: relative;
+            top: 150px;
+            left: 0px;
+        }
+
+        .jawa {
+            position: relative;
+            top: 290px;
+            left: -80px;
+        }
+
+        .kalimantan {
+            position: relative;
+            top: 130px;
+            left: -290px;
+        }
+
+        .sulawesi {
+            position: relative;
+            top: 150px;
+            left: -330px
+        }
+
+        .ntt {
+            position: relative;
+            top: 90px;
+            left: 150px;
+        }
+
+        .papua {
+            position: relative;
+            top: -25px;
+            left: 170px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container justify-content-center" style="text-align:center;font-weight:bolder;font-size: 50px; color:indigo;padding-top:50px">
         PILIH DAN MULAI BELAJAR!
+        <div>
+            <img class="sumatera" src="../sumatera.png" width="20%">
+            <img class="jawa" src="../jawa.png" width="20%">
+            <img class="kalimantan" src="../kalimantan.png" width="20%">
+            <img class="sulawesi" src="../sulawesi.png" width="20%">
+            <img class="ntt" src="../ntt.png" width="20%">
+            <img class="papua" src="../papua.png" width="20%">
+        </div>
     </div>
     <?php include("../lib/footer.php"); ?>
