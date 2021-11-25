@@ -125,7 +125,9 @@
               <input type="password" class="form-control" name="password"><br>
             </div>
             <div class="container" style="text-align: center">
-              <button type="submit" class="btn-grad" name="submit" value="submit" style="font-size: 15px;">Login</button>
+              <a href="beranda.php">
+                <button type="submit" class="btn-grad" name="submit" value="submit" style="font-size: 15px;">Login</button>
+              </a>
           </form>
         </div>
         <div class="container" style="font-size: 15px;text-align: center;font-weight: bold; padding-top: 50px;"> Belum Buat Akun? Yuk Buat Akun! <br>

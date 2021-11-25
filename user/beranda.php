@@ -81,7 +81,7 @@
             </div>
             <div class="row" style="padding-top: 50px; padding-bottom: 50px;">
                 <div class="column" style="height: autopx;padding-left: 50px;">
-                    <div id="rcorners1" style="height: 350px;">
+                    <div id="rcorners1" style="height: 380px;">
                         <table class="table table-light" style="font-weight: bold;">
                             <thead>
                                 <tr>
@@ -105,6 +105,10 @@
                                 <td>100%</td>
                             </tr>
                             <tr>
+                                <td>Nusa Tenggara</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
                                 <td>Papua</td>
                                 <td>100%</td>
                             </tr>
@@ -112,7 +116,7 @@
                     </div>
                 </div>
                 <div class="column" style="height: auto; padding-right: 50px;">
-                    <div id="rcorners1" style="height: 350px;">
+                    <div id="rcorners1" style="height: 380px;">
                         <table class="table" style="font-weight: bold; border: 5px solid purple;">
                             <thead>
                                 <tr>
