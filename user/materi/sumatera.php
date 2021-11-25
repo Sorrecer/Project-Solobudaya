@@ -1,4 +1,4 @@
-<?php include("../../lib/header-buat-akun.php"); ?>
+<?php include("../../lib/header-pilih-provinsi.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -10,6 +10,12 @@
     <style>
     </style>
 </head>
+<div class="container justify-content-center" style="text-align:center;font-weight:bolder;font-size: 50px; color:indigo;padding-top:50px">
+    Pilih Provinsi
+    <div>
+        <img id="sumatera" src="../../images/sumatera.png" width="50%">
+    </div>
+</div>
 
 <body>
     <?php include("../../lib/footer.php"); ?>
