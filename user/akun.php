@@ -85,13 +85,16 @@
     <div class="container" style="width: autopx;">
         <!-- kolom kiri -->
         <div class="column1" style="background-color: rgba(255, 255, 255, 0.5); padding:50px; height: 1000px;">
-            <div class="container" style="text-align: center; padding-top: 50px;">
-                <img src="../profile.png" width="40%">
+            <div class="container" style="text-align: center; padding-top: 50px; position: relative; top:0px; left:0px;">
+                <img src="../profile.png" width="40%" style="position:relative; top:0px; left:0px;" alt="userprofile">
+                <a href="ubah_profile.php">
+                    <input type="image" src="../editprofilicon.png" width="12%" style="position:absolute; top:190px; left:310px;" alt="editprofilicon" name="test" class="btTxt submit" id="test" />
+                </a>
                 <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan</div>
             </div>
             <div class="container my-4" style="text-align: center; padding-top: 100px;">
-                <input type="text" class="form-control" id="deskripsi" name="deskripsi" style="height: 200px; text-align:center" value="Deskripsikan Diri Anda...">
-            </div>
+                <textarea class="form-control" id="deskripsi" name="deskripsi" style="height: 200px; text-align:justify;" placeholder=" Deskripsikan Diri Anda..."></textarea>
+            </div> 
         </div>
 
         <!-- kolom kanan -->
@@ -100,7 +103,7 @@
             <!-- bergabung -->
             <div class="container" style="text-align: center; padding-top: 50px; width:100%;">
                 <div style="text-align: center; background-color: rgba(255, 255, 255, 0.5); height:50px;font-weight: bold; border-radius: 10px">
-                    <img src=" ../logo2.png" height="35px" width="25px">
+                    <img src=" ../logo2.png" height="35px" width="25px" alt="logoSB">
                     <class="text-dark" style="font-weight: bold; font-size: 25px; padding-left: 15px;">Bergabung tanggal 2 April 2021</class>
                 </div>
             </div>
@@ -124,7 +127,7 @@
                     <a href="ubah-password.php">
                         <button class="btn-grad2 btn-center" style="font-size: 30px; align-content: center; width:80%">
                             Keluar
-                            <img src=" ../logo-pintu.png" height="35px" width="25px" style="">
+                            <img src=" ../logo-pintu.png" height="35px" width="25px" style="" alt="logouticon">
                         </button>
                     </a>
                 </div>
