@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <?php include('../validator/buatakun_v.php'); ?>
     <div class="container d-flex justify-content-center my-4">
         <div id="rcorners1">
             <div class="rounded"><br>
@@ -33,9 +34,7 @@
                         <div class="col-md-9">
                             <div class="mb-4">
                                 <label for="username" class="form-label">Username*</label>
-                                <input type="text" class="form-control" id="username" name="username" value="<?php if (isset($username)) {
-                                                                                                                    echo $username;
-                                                                                                                } ?>">
+                                <input type="text" class="form-control" id="username" name="username" value="<?php set_back('username') ?>">
                                 <div class="text-danger"><?php if (isset($error_username)) {
                                                                 echo $error_username;
                                                             } ?></div>
@@ -46,9 +45,7 @@
                         <div class="col-md-9">
                             <div class="mb-4">
                                 <label for="password" class="form-label">Password*</label>
-                                <input type="password" class="form-control" id="password" name="password" value="<?php if (isset($password)) {
-                                                                                                                        echo $password;
-                                                                                                                    } ?>">
+                                <input type="password" class="form-control" id="password" name="password" value="<?php set_back('password') ?>">
                                 <div class="text-danger"><?php if (isset($error_password)) {
                                                                 echo $error_password;
                                                             } ?></div>
