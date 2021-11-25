@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../ajax/script.js"></script>
-    <title>Home</title>
+    <title>Akun</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
         .column {
@@ -124,7 +124,7 @@
                     </a>
                 </div>
                 <div class=" container" style="text-align: center; padding-top: 20px">
-                    <a href="ubah-password.php">
+                    <a href="index.php">
                         <button class="btn-grad2 btn-center" style="font-size: 30px; align-content: center; width:80%">
                             Keluar
                             <img src=" ../images/logo-pintu.png" height="35px" width="25px" style="" alt="logouticon">
