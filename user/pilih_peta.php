@@ -68,12 +68,12 @@
     <div class="container justify-content-center" style="text-align:center;font-weight:bolder;font-size: 50px; color:indigo;padding-top:50px">
         PILIH DAN MULAI BELAJAR!
         <div>
-            <a href="sumatera.php"><img id="sumatera" src="../images/sumatera.png" width="20%"></a>
-            <a href="jawa.php"><img class="jawa" src="../images/jawa.png" width="20%"></a>
-            <a href="kalimantan.php"><img class="kalimantan" src="../images/kalimantan.png" width="20%"></a>
-            <a href="sulawesi.php"><img class="sulawesi" src="../images/sulawesi.png" width="20%"></a>
-            <a href="ntt.php"><img class="ntt" src="../images/ntt.png" width="20%"></a>
-            <a href="papua.php"><img class="papua" src="../images/papua.png" width="20%"></a>
+            <a href="materi/sumatera.php"><img id="sumatera" src="../images/sumatera.png" width="20%"></a>
+            <a href="materi/jawa.php"><img class="jawa" src="../images/jawa.png" width="20%"></a>
+            <a href="materi/kalimantan.php"><img class="kalimantan" src="../images/kalimantan.png" width="20%"></a>
+            <a href="materi/sulawesi.php"><img class="sulawesi" src="../images/sulawesi.png" width="20%"></a>
+            <a href="materi/ntt.php"><img class="ntt" src="../images/ntt.png" width="20%"></a>
+            <a href="materi/papua.php"><img class="papua" src="../images/papua.png" width="20%"></a>
         </div>
     </div>
     <?php include("../lib/footer.php"); ?>
