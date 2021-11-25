@@ -21,7 +21,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-white bg-white">
         <a class="navbar-brand" href="#">
-            <img src="../logo2.png" width="30" height="30" class="d-inline-block align-top" alt="" style="margin-left: 30px;">
+            <img src="../images/logo2.png" width="30" height="30" class="d-inline-block align-top" alt="" style="margin-left: 30px;">
         </a>
         <div class="text-dark" style="font-weight: bold; font-size: 25px;">Buat Akun</div>
     </nav>
