@@ -1,4 +1,4 @@
-<?php include("../lib/header-new.php"); ?>
+<?php include("../lib/header.php"); ?>
     <title>Login</title>
     <style>
         body {
@@ -69,7 +69,8 @@
     </style>
 </head>
 
-<body>    
+<body>
+  <?php require('../validator/login_v.php'); ?>
     <nav class="navbar navbar-expand-md navbar-white bg-white">
         <a class="navbar-brand" href="#">
             <img src="../images/logo2.png" width="25" height="35" class="d-inline-block align-top" alt="" style="margin-left: 60px;">
@@ -98,7 +99,7 @@
                 <!-- isi kotak   -->
                 <div class="container" style="font-size: 25px; text-align: center; font-weight: bold;"> Masuk SoloBudaya dan mulai belajar banyak kebudayaan Indonesia! </div>
                 <div class="container my-4"></div>
-                <form class="form" name="login">
+                <form class="form" name="login" method="POST">
                     <!-- username -->
                     <label for="username" class="form-label" style="text-align: center;">Username</label><br>
                     <div class="container" style="text-align: center">
