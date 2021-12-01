@@ -21,8 +21,6 @@ if(isset($_POST['tambah'])){
         }
     }
 
-    echo $pass;
-    echo md5($pass);
     do_valid('../post/create_account.php');
 }
 ?>
