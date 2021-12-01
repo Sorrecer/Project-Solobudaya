@@ -29,6 +29,12 @@
         <div class="text-dark" style="font-weight: bold; font-size: 25px;">Ubah Password</div>
     </nav>
 
+    <div class="back-button">
+        <a href="akun.php">
+            <input type="image" src="../images/button_back.png" width="5%" style="position:absolute; top:90px; left:40px">
+        </a>
+    </div>
+
     <div class="container d-flex justify-content-center my-4">
         <div id="rcorners1">
             <div class="rounded"><br>

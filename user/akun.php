@@ -73,6 +73,11 @@
         </a>
         <div class="text-dark" style="font-weight: bold; font-size: 25px;">Pengaturan Akun</div>
     </nav>
+    <div class="back-button">
+        <a href="beranda.php">
+            <input type="image" src="../images/button_back.png" width="5%" style="position:absolute; top:90px; left:40px">
+        </a>
+    </div>
 
     <div class="container" style="width: autopx;">
         <!-- kolom kiri -->
