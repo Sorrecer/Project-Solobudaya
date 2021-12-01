@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
     required('password');
 
     $user = test_input($_POST['username']);
-    $pass = md5(test_input($_POST['password']));
+    $pass = md5($_POST['password']);
 
     if($valid){
         $res = make_query("SELECT * FROM akun WHERE username='$user' AND password='$pass'");
@@ -15,9 +15,6 @@ if(isset($_POST['submit'])){
             $error_username = 'username atau password tidak benar';
         }
     }
-
-    echo $pass;
-    echo $valid?"yes":"no";
 
     do_valid('../post/login.php');
 }
