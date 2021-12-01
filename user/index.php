@@ -1,4 +1,4 @@
-<?php include("../lib/header-new.php"); ?>
+<?php include("../lib/header.php"); ?>
     <title>Login</title>
     <style>
         body {
