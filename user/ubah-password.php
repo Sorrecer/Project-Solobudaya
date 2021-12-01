@@ -1,14 +1,13 @@
-<?php include("../lib/header-buat-akun.php"); ?>
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Buat Akun</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<?php include("../lib/header.php"); ?>
+    <title>Ubah Password</title>
     <style>
-        #rcorners1 {
+        body {
+            background-image: url('../images/bg2.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 130%;
+        }
+        .rcorners1 {
             border-radius: 25px;
             border-width: 5px;
             border-color: purple;
@@ -22,6 +21,13 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-white bg-white">
+        <a class="navbar-brand" href="beranda.php">
+            <img src="../images/logo2.png" width="25" height="35" class="d-inline-block align-top" alt="" style="margin-left: 60px;">
+        </a>
+        <div class="text-dark" style="font-weight: bold; font-size: 25px;">Ubah Password</div>
+    </nav>
+
     <div class="container d-flex justify-content-center my-4">
         <div id="rcorners1">
             <div class="rounded"><br>
@@ -68,5 +74,5 @@
             </div>
         </div>
     </div>
-    <div class="container my-5"></div>
-    <?php include("../lib/footer.php"); ?>
+<div class="container my-5"></div>
+<?php include("../lib/footer.php"); ?>
