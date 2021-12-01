@@ -89,6 +89,7 @@
 </head>
 
 <body>
+  <?php require('../validator/login_v.php'); ?>
 
   <div class="container my-1">
     <!-- kolom kiri -->
@@ -114,7 +115,7 @@
           <div class="container" style="font-size: 25px;  ; text-align: center;font-weight: bold;"> Masuk SoloBudaya dan mulai belajar banyak kebudayaan Indonesia! </div>
           <!-- username -->
           <div class="container my-5"></div>
-          <form class="form" name="login">
+          <form class="form" name="login" method="post">
             <label for="username" class="form-label" style="text-align: center;">Username</label><br>
             <div class="container" style="text-align: center">
               <input type="text" class="form-control" name="username"><br>
@@ -125,9 +126,7 @@
               <input type="password" class="form-control" name="password"><br>
             </div>
             <div class="container" style="text-align: center">
-              <a href="beranda.php">
-                <button type="submit" class="btn-grad" name="submit" value="submit" style="font-size: 15px;">Login</button>
-              </a>
+              <button type="submit" class="btn-grad" name="submit" value="submit" style="font-size: 15px;">Login</button>
           </form>
         </div>
         <div class="container" style="font-size: 15px;text-align: center;font-weight: bold; padding-top: 50px;"> Belum Buat Akun? Yuk Buat Akun! <br>
