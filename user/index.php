@@ -103,12 +103,14 @@
                     <!-- username -->
                     <label for="username" class="form-label" style="text-align: center;">Username</label><br>
                     <div class="container" style="text-align: center">
-                        <input type="text" class="form-control" name="username"><br>
+                        <input type="text" class="form-control" name="username" value="<?php set_back('username') ?>">
+                        <div class="text-danger"><?php if (isset($error_username)) {echo $error_username;} ?></div><br>
                     </div>
                     <!-- password -->
                     <label for="password" class="form-label" style="text-align: center;">Password</label><br>
                     <div class="container" style="text-align: center">
-                        <input type="password" class="form-control" name="password"><br>
+                        <input type="password" class="form-control" name="password" value="<?php set_back('password') ?>">
+                        <div class="text-danger"><?php if (isset($error_password)) {echo $error_password;} ?></div><br>
                     </div>
                     <div class="container" style="text-align: center">
                         <a href="beranda.php">

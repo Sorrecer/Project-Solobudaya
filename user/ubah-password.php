@@ -44,25 +44,28 @@
                 <form method="POST" class="container my-5" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                     <div class="row justify-content-md-center">
                         <div class="col-md-9">
-                            <div class="mb-4">
-                                <label for="username" class="form-label">Password Lama</label>
-                                <input type="password" class="form-control" id="oldPassword" name="oldPassword">
+                            <div class="mb-1">
+                                <label for="oldPassword" class="form-label">Password Lama</label>
+                                <input type="password" class="form-control" id="oldPassword" name="oldPassword" value="<?php set_back('oldpassword') ?>">
+                                <div class="text-danger"><?php if (isset($error_oldpassword)) {echo $error_oldpassword;} ?></div><br>
                             </div>
                         </div>
                     </div>
                     <div class="row g-3 justify-content-md-center">
                         <div class="col-md-9">
-                            <div class="mb-4">
+                            <div class="mb-1">
                                 <label for="password" class="form-label">Password Baru</label>
-                                <input type="password" class="form-control" id="password" name="password">
+                                <input type="password" class="form-control" id="password" name="password" value="<?php set_back('password') ?>">
+                                <div class="text-danger"><?php if (isset($error_password)) {echo $error_password;} ?></div><br>
                             </div>
                         </div>
                     </div>
                     <div class="row g-3 justify-content-md-center">
                         <div class="col-md-9">
-                            <div class="mb-4">
+                            <div class="mb-1">
                                 <label for="konPassword" class="form-label">Konfirmasi Password</label>
-                                <input type="password" class="form-control" id="konPassword" name="konPassword">
+                                <input type="password" class="form-control" id="konPassword" name="konPassword" value="<?php set_back('konpassword') ?>">
+                                <div class="text-danger"><?php if (isset($error_konpassword)) {echo $error_konpassword;} ?></div><br>
                             </div>
                         </div>
                     </div>

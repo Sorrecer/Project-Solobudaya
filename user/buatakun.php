@@ -33,7 +33,7 @@
         <div class="rcorners1">
             <div class="rounded"><br>
                 <div class="container d-flex justify-content-center">
-                    <h1>Buat Akun yukz</h1>
+                    <h1>Buat Akun</h1>
                 </div>
                 <form method="POST" class="container my-5" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                     <div class="row justify-content-md-center">
@@ -41,9 +41,7 @@
                             <div class="mb-4">
                                 <label for="username" class="form-label">Username*</label>
                                 <input type="text" class="form-control" id="username" name="username" value="<?php set_back('username') ?>">
-                                <div class="text-danger"><?php if (isset($error_username)) {
-                                                                echo $error_username;
-                                                            } ?></div>
+                                <div class="text-danger"><?php if (isset($error_username)) {echo $error_username;} ?></div>
                             </div>
                         </div>
                     </div>
@@ -52,9 +50,7 @@
                             <div class="mb-4">
                                 <label for="password" class="form-label">Password*</label>
                                 <input type="password" class="form-control" id="password" name="password" value="<?php set_back('password') ?>">
-                                <div class="text-danger"><?php if (isset($error_password)) {
-                                                                echo $error_password;
-                                                            } ?></div>
+                                <div class="text-danger"><?php if (isset($error_password)) {echo $error_password;} ?></div>
                             </div>
                         </div>
                     </div>
@@ -63,9 +59,7 @@
                             <div class="mb-4">
                                 <label for="konPassword" class="form-label">Konfirmasi Password*</label>
                                 <input type="password" class="form-control" id="konPassword" name="konPassword">
-                                <div class="text-danger"><?php if (isset($error_konpassword)) {
-                                                                echo $error_konpassword;
-                                                            } ?></div>
+                                <div class="text-danger"><?php if (isset($error_konpassword)) {echo $error_konpassword;} ?></div>
                             </div>
                         </div>
                     </div>
