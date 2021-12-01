@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <?php require('../validator/ubah_password_v.php'); ?>
     <nav class="navbar navbar-expand-md navbar-white bg-white">
         <a class="navbar-brand" href="beranda.php">
             <img src="../images/logo2.png" width="25" height="35" class="d-inline-block align-top" alt="" style="margin-left: 60px;">
@@ -39,7 +40,7 @@
                         <div class="col-md-9">
                             <div class="mb-4">
                                 <label for="username" class="form-label">Password Lama</label>
-                                <input type="password" class="form-control" id="username" name="username">
+                                <input type="password" class="form-control" id="oldPassword" name="oldPassword">
                             </div>
                         </div>
                     </div>
@@ -61,9 +62,7 @@
                     </div>
                     <div class="container d-flex justify-content-center">
                         <div class="form-group">
-                            <button type="submit" name="tambah" class="btn btn-success btn-lg mx-2" style="color:white">
-                                <a href="akun.php" style="color:white; text-decoration: none; ">Ubah</a>
-                            </button>
+                            <button type="submit" name="tambah" class="btn btn-success btn-lg mx-2" style="color:white">Ubah</button>
 
                         </div>
                         <div class="form-group">
