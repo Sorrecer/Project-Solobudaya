@@ -95,12 +95,12 @@
     <div class="column1">
       <div class="text-white d-block justify-content-center my-4" style="font-size:30px">
         <div>
-          <img class="sb" src="../sb1.png" width="250" height="60" class="d--block align-top" alt="">
+          <img class="sb" src="../images/sb1.png" width="250" height="60" class="d--block align-top" alt="">
         </div>
         <div class="container d-grid my-1  " style="font-size: 70px; left :auto;"><b> Mengenal Budaya <br>Indonesia dengan<br> Menyenangkan</b>
         </div>
         <div>
-          <img src="../peta1.png" width="700" height="280" class="d--block align-top" alt="">
+          <img src="../images/peta1.png" width="700" height="280" class="d--block align-top" alt="">
         </div>
       </div>
     </div>
