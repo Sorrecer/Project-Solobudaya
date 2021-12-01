@@ -60,7 +60,7 @@
         <div class="column1">
             <div class="row">
                 <div class="column" style=" width: 100%; height: auto;padding:50px">
-                    <div id="rcorners1">
+                    <div class="rcorners1">
                         <!-- gambar -->
                         <div>
                             <img src="../images/peta2.png" width="100%" height="100%">
@@ -77,7 +77,7 @@
             </div>
             <div class="row" style="padding-top: 50px; padding-bottom: 50px;">
                 <div class="column" style="height: autopx;padding-left: 50px;">
-                    <div id="rcorners1" style="height: 380px;">
+                    <div class="rcorners1" style="height: 380px;">
                         <table class="table table-light" style="font-weight: bold;">
                             <thead>
                                 <tr>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="column" style="height: auto; padding-right: 50px;">
-                    <div id="rcorners1" style="height: 380px;">
+                    <div class="rcorners1" style="height: 380px;">
                         <table class="table" style="font-weight: bold; border: 5px solid purple;">
                             <thead>
                                 <tr>

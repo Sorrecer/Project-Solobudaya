@@ -36,7 +36,7 @@
     </div>
 
     <div class="container d-flex justify-content-center my-4">
-        <div id="rcorners1">
+        <div class="rcorners1">
             <div class="rounded"><br>
                 <div class="container d-flex justify-content-center">
                     <h1>Ubah Password</h1>
