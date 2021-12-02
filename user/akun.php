@@ -87,10 +87,13 @@
                 <a href="ubah_profile.php">
                     <input type="image" src="../images/editprofilicon.png" width="12%" style="position:absolute; top:190px; left:310px;" alt="editprofilicon" name="test" class="btTxt submit" id="test" />
                 </a>
-                <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan</div>
+                <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan
+                <button class="btn-grad btn-center mt-2" style="font-size: 20px; align-content: center; width:50%">Ubah Nama</button>
+                </div>
             </div>
             <div class="container my-4" style="text-align: center; padding-top: 100px;">
                 <textarea class="form-control" id="deskripsi" name="deskripsi" style="height: 200px; text-align:justify;" placeholder=" Deskripsikan Diri Anda..."></textarea>
+                <button class="btn-grad btn-center mt-2" style="font-size: 20px; align-content: center; width:50%">Save Deskripsi</button>
             </div>
         </div>
 
