@@ -1,5 +1,5 @@
 <?php include("../lib/header.php"); ?>
-    <title>Materi</title>
+    <title>Daftar Materi</title>
     <style>
         body {
             background-image: url('../images/bg4.jpg');
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <div class="text-white" style="font-weight: bold; font-size: 25px;">Materi</div>
+                    <div class="text-white" style="font-weight: bold; font-size: 25px;">Daftar Materi</div>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
@@ -75,11 +75,11 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Judul Materi blablablablablaba</td>
-                    <td>Termasuk Tarian Adat</td>
+                    <td>Tari Bedhaya</td>
+                    <td>Tarian Adat</td>
                     <td><div class="d-grid gap-1">
                     <a href="edit_materi.php"><button class="btn btn-primary btn-sm">Edit</button></a>
-                    <a href="get_delete_buku.php"><button class="btn btn-danger btn-sm" onclick = "return confirm (\'Apakah anda yakin ingin menghapus?\')">Delete</button></a>
+                    <a href=""><button class="btn btn-danger btn-sm" onclick = "return confirm (\'Apakah anda yakin ingin menghapus?\')">Delete</button></a>
                     </div></td>
                 </tr>
             </tbody>

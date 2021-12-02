@@ -59,23 +59,23 @@
                 <div class="m-2 d-flex justify-content-center">
                     <a href="materi.php">
                         <button class="btn btn-success btn-lg">
-                            Materi
+                            Daftar Materi
                         </button>
                     </a>
                 </div>
                 <div class="m-2 d-flex justify-content-center">
-                    <a href="pengembalian.php">
-                        <button class="btn btn-success btn-lg" >
-                            Tambah Kategori
+                    <!-- <a href=""> -->
+                        <button class="btn btn-success btn-lg" disabled>
+                            Daftar Kategori
                         </button>
                     </a>
                 </div>
                 <div class="m-2 d-flex justify-content-center mb-5">
-                    <a href="tambah_anggota.php">
-                        <button class="btn btn-success btn-lg btn-block">
-                            Tambah Admin
+                    <!-- <a href=""> -->
+                        <button class="btn btn-success btn-lg" disabled>
+                            Daftar Admin
                         </button>
-                    </a>
+                    <!-- </a> -->
                 </div>
             </div>
             
