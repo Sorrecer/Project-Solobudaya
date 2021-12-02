@@ -22,7 +22,8 @@
 
         .btn-grad {
             margin: center;
-            padding: 48px 48px;
+            padding: 48px 20px;
+            width: 250px;
             text-align: center;
             font-weight: bold;
             font-size: 20px;
