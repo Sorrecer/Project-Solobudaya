@@ -92,7 +92,7 @@
             <a href="kuis_salah.php">
                 <button class="btn-grad my-3">A. salah</button>
             </a>
-            <a href="kuis_benar .php">
+            <a href="kuis_benar.php">
                 <button class="btn-grad my-3">B. benar</button>
             </a>
             <a href="kuis_salah.php">

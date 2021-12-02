@@ -92,18 +92,11 @@
             </a>
         </div>
         <div class="container" style="background-color:rgba(92, 47, 161, 0.2); text-align: center;">
-            <a href=" #">
-                <button class="btn-grad my-3">A. salah</button>
-            </a>
-            <a href=" #">
-                <button class="btn-grad my-3">B. benar</button>
-            </a>
-            <a href=" #">
-                <button class="btn-grad my-3">C. salah</button>
-            </a>
-            <a href=" #">
-                <button class="btn-grad my-3">D. salah</button>
-            </a>
+            <button class="btn-grad my-3">A. salah</button>
+            <button class="btn-grad my-3">B. benar</button>
+            <button class="btn-grad my-3">C. salah</button>
+            <button class="btn-grad my-3">D. salah</button>
+
         </div>
     </div>
 </body>
