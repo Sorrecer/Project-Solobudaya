@@ -74,14 +74,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Tari Bedhaya</td>
-                    <td>Tarian Adat</td>
-                    <td><div class="d-grid gap-1">
-                    <a href="edit_materi.php"><button class="btn btn-primary btn-sm">Edit</button></a>
-                    <a href=""><button class="btn btn-danger btn-sm" onclick = "return confirm (\'Apakah anda yakin ingin menghapus?\')">Delete</button></a>
-                    </div></td>
-                </tr>
+                <?php include('../get/admin_materi.php'); ?>
             </tbody>
         </table>
     </div>

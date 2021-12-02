@@ -57,7 +57,7 @@
             </div>
             <div class="container d-grid my-3">
                 <div class="m-2 d-flex justify-content-center">
-                    <a href="materi.php">
+                    <a href="provinsi.php">
                         <button class="btn btn-success btn-lg">
                             Daftar Materi
                         </button>

@@ -68,9 +68,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Sumatera Utara</td>
-                </tr>
+                <?php include('../get/admin_provinsi.php'); ?>
             </tbody>
         </table>
     </div>
