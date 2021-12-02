@@ -6,9 +6,12 @@ $_SESSION['id_akun'] = $res->id_akun;
 
 if(make_query("SELECT * FROM admin WHERE id_admin=$res->id_akun")->num_rows == 0){
     $_SESSION['kategori'] = 'user';
+    header('Location: ../user/beranda.php');
 }
-else $_SESSION['kategori'] = 'admin';
+else{
+    $_SESSION['kategori'] = 'admin';
+    header('Location: ../admin/index.php');
+}
 
 // header
-header('Location: ../user/beranda.php');
 ?>
