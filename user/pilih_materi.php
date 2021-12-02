@@ -49,7 +49,7 @@
         <div class="row">
             <!-- kolom kiri -->
             <div class="column1 justify-content-center" style="width:50%;padding:50px;">
-                <a href="isi_materi.php"> <button class="materi" style="transform: 200px; margin-left:190px"> TARI <br>
+                <a href="materi.php"> <button class="materi" style="transform: 200px; margin-left:190px"> TARI <br>
                         <img src="../images/tari.png" width="300" height="300">
                     </button></a>
                 <button class="materi" style="align-items: center; justify-content: center; margin-top:30px;margin-left:190px">COMING SOON<br>
@@ -59,7 +59,7 @@
 
             <!-- kolom kanan -->
             <div class="column2" style="width:50%;float:right;padding:50px;">
-                <a href="isi_materi.php"><button class="materi" style="align-items: center; justify-content: center;"> SENJATA TRADISIONAL<br>
+                <a href="materi.php"><button class="materi" style="align-items: center; justify-content: center;"> SENJATA TRADISIONAL<br>
                         <img src=" ../images/senjata.png" width="300" height="300">
                     </button></a>
                 <button class="materi" style="align-items: center; justify-content: center; margin-top:30px;"> COMING SOON<br>
