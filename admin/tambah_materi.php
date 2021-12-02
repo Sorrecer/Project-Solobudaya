@@ -50,51 +50,20 @@
         </div>
     </nav>
 
-    <?php
-    require_once('../lib/db_login.php');
-    if (isset($_POST['tambah'])){
-        $valid = TRUE;
-        if(isset($_FILES["file_gambar"])){
-            $file = $_FILES["file_gambar"]['name'];
-            $ext = strtolower(pathinfo($file)['extension']);
-            if(!in_array($ext, array("png", "jpg", "jpeg", "bmp"))){
-                $error_cover = "Gambar tidak valid";
-                $valid = FALSE;
-            }
-        }
-        $isbn = test_input($_POST['isbn']);
-        if ($isbn == '') {
-            $error_isbn = "ISBN is required";
-            $valid = FALSE;
-        }
-        $judul = test_input($_POST['judul']);
-        if ($judul == '') {
-            $error_judul = "Judul is required";
-            $valid = FALSE;
-        }
-        $kategori = test_input($_POST['idkategori']);
-        if ($kategori == '') {
-            $error_kategori = "Pilih kategori";
-            $valid = FALSE;
-        }
-        if($valid){
-            include("../ajax/post_add_buku.php");
-        }
-    }
-    ?>
+    <?php include('../post/admin_upload_materi.php')?>
     <div class="container d-flex justify-content-center">
         <div class="card bg-light w-75 my-4">
             <div class="card-body "><br>
                 <div class="container d-flex justify-content-center">
                     <h1>Tambah Materi</h1>
                 </div>
-                <form method="POST" class="container my-5" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
+                <form method="POST" class="container my-5" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]).'?id_provinsi='.$_GET['id_provinsi']; ?>" enctype="multipart/form-data">
                     <div class="row g-3 justify-content-md-center">
                         <div class="col-md-6">
                             <div class="mb-4">
                                 <label for="file_gambar" class="form-label">Upload Materi (.html)</label>
                                 <div class="input-group mb-3">
-                                    <input type="file" class="form-control" id="file_gambar" name="file_gambar">
+                                    <input type="file" class="form-control" id="file_materi" name="file_materi">
                                 </div>
                                 <div class="text-danger"><?php if (isset($error_cover)) {echo $error_cover;} ?></div>
                             </div>
@@ -113,7 +82,7 @@
                         <div class="col-md-6">
                             <div class="mb-4">
                                 <label for="idkategori" class="form-label">Kategori</label>
-                                <select class="form-select" id="idkategori" name="idkategori" aria-label="Default select example">
+                                <select class="form-select" id="kategori" name="kategori" aria-label="Default select example">
                                     <option selected value="">Pilih Kategori..</option>
                                 </select>
                                 <div class="text-danger"><?php if (isset($error_kategori)) {echo $error_kategori;} ?></div>
