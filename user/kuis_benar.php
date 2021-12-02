@@ -85,22 +85,18 @@
             ?>
         </div>
         <!-- KOREKSI -->
-        <div class="container my-5;" style="height:40px;text-align: center;margin-top: 100px; font-weight:bold;font-size:30px; color:green">
-
+        <div class="container my-5;" style="text-align: center;margin-top: 100px; font-weight:bold;font-size:30px; color:green">
+            <img src="../images/benar.png" width="40px" height="40px"> Benar
+            <a href="pilih_materi.php">
+                <button class="btn-grad my-3" style="padding:8px 32px; width:fit-content;margin-left:50px">Selanjutnya</button>
+            </a>
         </div>
         <div class="container" style="background-color:rgba(92, 47, 161, 0.2); text-align: center;">
-            <a href="kuis_salah.php">
-                <button class="btn-grad my-3">A. salah</button>
-            </a>
-            <a href="kuis_benar.php">
-                <button class="btn-grad my-3">B. benar</button>
-            </a>
-            <a href="kuis_salah.php">
-                <button class="btn-grad my-3">C. salah</button>
-            </a>
-            <a href="kuis_salah.php">
-                <button class="btn-grad my-3">D. salah</button>
-            </a>
+            <button class="btn-grad my-3">A. salah</button>
+            <button class="btn-grad my-3">B. benar</button>
+            <button class="btn-grad my-3">C. salah</button>
+            <button class="btn-grad my-3">D. salah</button>
+
         </div>
     </div>
 </body>
