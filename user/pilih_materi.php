@@ -62,9 +62,9 @@
                 <a href="materi.php"><button class="materi" style="align-items: center; justify-content: center;"> SENJATA TRADISIONAL<br>
                         <img src=" ../images/senjata.png" width="300" height="300">
                     </button></a>
-                <button class="materi" style="align-items: center; justify-content: center; margin-top:30px;"> COMING SOON<br>
-                    <img src=" ../images/coming.png" width="300" height="300">
-                </button>
+                <a href="kuis.php"><button class="materi" style="align-items: center; justify-content: center; margin-top:30px;">KUIS MATERI<br>
+                        <img src=" ../images/kuis.png" width="300" height="300">
+                    </button>
             </div>
         </div>
     </div>
