@@ -81,7 +81,6 @@
     </div>
 
     <div class="container" style="width: autopx;">
-        <form method="POST">
             <!-- kolom kiri -->
             <div class="column1" style="background-color: rgba(255, 255, 255, 0.5); padding:50px; height: 1000px;">
                 <div class="container" style="text-align: center; padding-top: 50px; position: relative; top:0px; left:0px;">
@@ -89,6 +88,7 @@
                     <a href="ubah_profile.php">
                         <input type="image" src="../images/editprofilicon.png" width="12%" style="position:absolute; top:190px; left:310px;" alt="editprofilicon" name="test" class="btTxt submit" id="test" />
                     </a>
+        <form method="POST">                    
                     <div style="font-weight: bold; padding-top:50px; font-size:30px" id="name" name="name"><?php echo $name ?></div>
                     <button type="button" onclick="name_edit()" class="btn-grad btn-center mt-2" style="font-size: 20px; align-content: center; width:50%" id="name_button" name="ubah_nama" value="submit">Ubah Nama</button>
                 </div>
@@ -111,7 +111,7 @@
                 <!-- course selesai -->
                 <div class="container" style="text-align: center; padding-top: 50px; width:100%;">
                     <div style="text-align: center; background-color: rgba(255, 255, 255, 0.5); height:50px;font-weight: bold; border-radius: 10px">
-                        <class="text-dark" style="font-weight: bold; font-size: 25px;">69</class>
+                        <class="text-dark" style="font-weight: bold; font-size: 25px;">11</class>
                             <class="text-dark" style="font-weight: bold; font-size: 25px;">Course telah diselesaikan</class>
                     </div>
                 </div>
