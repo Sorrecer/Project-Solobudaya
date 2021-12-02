@@ -1,5 +1,5 @@
 <?php include("../lib/header.php"); ?>
-    <title>Beranda Admin</title>
+    <title>Materi</title>
     <style>
         body {
             background-image: url('../images/bg4.jpg');
@@ -29,17 +29,17 @@
 </head>
 
 <body>
-    <?php require('../validator/loginadmin_v.php'); ?>
+    <?php require('../validator/loginadmin_v.php'); ?>    
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.php">
                     <img src="../images/logo2.png" width="25" height="35" class="d-inline-block align-top" alt="" style="margin-left: 60px; ">
                     </a>
                 </li>
                 <li class="nav-item">
-                    <div class="text-white" style="font-weight: bold; font-size: 25px;">Beranda Admin</div>
+                    <div class="text-white" style="font-weight: bold; font-size: 25px;">Materi</div>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
@@ -50,36 +50,42 @@
         </div>
     </nav>
 
-    <div class="container d-flex justify-content-center my-1">
-        <div class="card border-success bg-dark w-75 my-3">
-            <div class="container d-flex justify-content-center my-5">
-                <h1 class="card-title text-white">Panel Admin</h1>
-            </div>
-            <div class="container d-grid my-3">
-                <div class="m-2 d-flex justify-content-center">
-                    <a href="materi.php">
-                        <button class="btn btn-success btn-lg">
-                            Materi
-                        </button>
-                    </a>
-                </div>
-                <div class="m-2 d-flex justify-content-center">
-                    <a href="pengembalian.php">
-                        <button class="btn btn-success btn-lg" >
-                            Tambah Kategori
-                        </button>
-                    </a>
-                </div>
-                <div class="m-2 d-flex justify-content-center mb-5">
-                    <a href="tambah_anggota.php">
-                        <button class="btn btn-success btn-lg btn-block">
-                            Tambah Admin
-                        </button>
-                    </a>
-                </div>
-            </div>
-            
-        </div>
+<div class="container d-flex justify-content-center my-5 text-white">
+    <h1>Materi SoloBudaya</h1>
+</div>
+
+<!-- Content -->
+<div class="container my-3">
+    <table class="table">
+        <tbody id="detail"></tbody>
+    </table>
+    <!-- Add Materi Button -->
+    <div class="container d-flex flex-row-reverse mb-3">
+        <a href="tambah_materi.php"><button class="btn btn-success">Tambah Materi</button></a>
     </div>
+    <!-- Tabel -->
+    <div class="table-responsive">
+        <table class="table align-middle table-light table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Judul</th>
+                    <th>Kategori</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Judul Materi blablablablablaba</td>
+                    <td>Termasuk Tarian Adat</td>
+                    <td><div class="d-grid gap-1">
+                    <a href="edit_materi.php"><button class="btn btn-primary btn-sm">Edit</button></a>
+                    <a href="get_delete_buku.php"><button class="btn btn-danger btn-sm" onclick = "return confirm (\'Apakah anda yakin ingin menghapus?\')">Delete</button></a>
+                    </div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 <div class="container my-5"></div>
+
 <?php include("../lib/footer.php"); ?>
