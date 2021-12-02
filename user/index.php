@@ -70,7 +70,7 @@
 </head>
 
 <body>
-  <?php require('../validator/login_v.php'); ?>
+    <?php require('../validator/login_v.php'); ?>
     <nav class="navbar navbar-expand-md navbar-white bg-white">
         <a class="navbar-brand" href="#">
             <img src="../images/logo2.png" width="25" height="35" class="d-inline-block align-top" alt="" style="margin-left: 60px;">

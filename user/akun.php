@@ -99,8 +99,8 @@
             <!-- isi kotak   -->
             <!-- bergabung -->
             <div class="container" style="text-align: center; padding-top: 50px; width:100%;">
-                <div style="text-align: center; background-color: rgba(255, 255, 255, 0.5); height:50px;font-weight: bold; border-radius: 10px">
-                    <img src=" ../logo2.png" height="35px" width="25px" alt="logoSB">
+                <div style="text-align: center; background-color: rgba(255, 255, 255, 0.5); height:50px; font-weight: bold; border-radius: 10px">
+                    <img src=" ../images/logo2.png" height="35px" width="25px" alt="logoSB">
                     <class="text-dark" style="font-weight: bold; font-size: 25px; padding-left: 15px;">Bergabung tanggal 2 April 2021</class>
                 </div>
             </div>
