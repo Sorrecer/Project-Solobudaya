@@ -88,16 +88,18 @@
                     <a href="ubah_profile.php">
                         <input type="image" src="../images/editprofilicon.png" width="12%" style="position:absolute; top:190px; left:310px;" alt="editprofilicon" name="test" class="btTxt submit" id="test" />
                     </a>
-        <form method="POST">                    
-                    <div style="font-weight: bold; padding-top:50px; font-size:30px" id="name" name="name"><?php echo $name ?></div>
-                    <button type="button" onclick="name_edit()" class="btn-grad btn-center mt-2" style="font-size: 20px; align-content: center; width:50%" id="name_button" name="ubah_nama" value="submit">Ubah Nama</button>
+                    <form method="POST">                    
+                        <div style="font-weight: bold; padding-top:50px; font-size:30px" id="name" name="name"><?php echo $name ?></div>
+                        <button type="button" onclick="name_edit()" class="btn-grad btn-center mt-2" style="font-size: 20px; align-content: center; width:50%" id="name_button" name="ubah_nama" value="submit">Ubah Nama</button>
+                    </form>
                 </div>
                 <div class="container my-4" style="text-align: center; padding-top: 100px;">
-                    <textarea class="form-control" id="deskripsi" name="deskripsi" style="height: 200px; text-align:justify;" placeholder=" Deskripsikan Diri Anda..."><?php echo $desc ?></textarea>
-                    <button type="submit" class="btn-grad btn-center mt-2" style="font-size: 20px; align-content: center; width:50%" name="ubah_deskripsi" value="submit">Save Deskripsi</button>
+                    <form method="POST">   
+                        <textarea class="form-control" id="deskripsi" name="deskripsi" style="height: 200px; text-align:justify;" placeholder=" Deskripsikan Diri Anda..."><?php echo $desc ?></textarea>
+                        <button type="submit" class="btn-grad btn-center mt-2" style="font-size: 20px; align-content: center; width:50%" name="ubah_deskripsi" value="submit">Save Deskripsi</button>
+                    </form>
                 </div>
             </div>
-
             <!-- kolom kanan -->
             <div class="column2" style="background-color: rgba(177, 177, 177, 0.5); padding:50px; height: 1000px;">
                 <!-- isi kotak   -->
@@ -125,7 +127,7 @@
                         </a>
                     </div>
                     <div class=" container" style="text-align: center; padding-top: 20px">
-                        <a href="index.php">
+                        <a href="../user/logout.php">
                             <button class="btn-grad2 btn-center" style="font-size: 30px; align-content: center; width:80%">
                                 Keluar
                                 <img src=" ../images/logo-pintu.png" height="35px" width="25px" style="" alt="logouticon">
@@ -134,7 +136,7 @@
                     </div>
                 </div>
             </div>
-        </form>
+
     </div>
 </div>
 
