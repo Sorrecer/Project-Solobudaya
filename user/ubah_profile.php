@@ -7,6 +7,31 @@
         background-attachment: fixed;
         background-size: 100% 130%;
     }
+
+    img:hover {
+        border: 5px solid #cfa8ff;
+    }
+
+    img:active {
+        border: 5px solid #6b00b8;
+    }
+
+    [type=radio] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* IMAGE STYLES */
+    [type=radio]+img {
+        cursor: pointer;
+    }
+
+    /* CHECKED STYLES */
+    [type=radio]:checked+img {
+        outline: 5px solid #6b00b8;
+    }
 </style>
 </head>
 
@@ -29,16 +54,37 @@
     </div>
     <div class="container" style="padding: 20px;text-align:center">
         <div class="column">
-            <img src="../images/aaa.gif" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
-            <img src="../images/aaa.gif" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
-            <img src="../images/aaa.gif" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
-            <img src="../images/aaa.gif" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+            <label>
+                <input type="radio" name="radio" id="p1">
+                <img src="../images/p1.png" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+            </label>
+            <label>
+                <input type="radio" name="radio" id="p2">
+                <img src="../images/p2.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+            </label>
+            <label>
+                <input type="radio" name="radio" id="p3">
+                <img src="../images/p3.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+            </label>
+            <label>
+                <input type="radio" name="radio" id="p4">
+                <img src="../images/p4.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+            </label>
         </div>
         <div class="column">
-            <img src="../images/aaa.gif" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
-            <img src="../images/aaa.gif" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
-            <img src="../images/aaa.gif" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
-            <img src="../images/aaa.gif" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+            <label>
+                <input type="radio" name="radio" id="p5">
+                <img src="../images/p5.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+            </label> <label>
+                <input type="radio" name="radio" id="p6">
+                <img src="../images/p6.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+            </label> <label>
+                <input type="radio" name="radio" id="p7">
+                <img src="../images/p7.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+            </label> <label>
+                <input type="radio" name="radio" id="p8">
+                <img src="../images/p8.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+            </label>
         </div>
         <div class="container my-5 d-flex justify-content-center">
             <div class="form-group">
