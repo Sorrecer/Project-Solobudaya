@@ -81,27 +81,45 @@
         <div class="row" style="margin-top: 200px;">
             <!--ISI MATERI-->
             <?php
-            include("../kuis/1.html");
+            include("../kuis/1.php");
             ?>
         </div>
         <!-- KOREKSI -->
         <div class="container my-5;" style="height:40px;text-align: center;margin-top: 100px; font-weight:bold;font-size:30px; color:green">
 
         </div>
+        <div class="container my-5;" style="text-align: center;margin-top: 100px; font-weight:bold;font-size:30px; color:green" id="koreksi">
+        </div>
         <div class="container" style="background-color:rgba(92, 47, 161, 0.2); text-align: center;">
-            <a href="kuis_salah.php">
-                <button class="btn-grad my-3">A. salah</button>
-            </a>
-            <a href="kuis_benar.php">
-                <button class="btn-grad my-3">B. benar</button>
-            </a>
-            <a href="kuis_salah.php">
-                <button class="btn-grad my-3">C. salah</button>
-            </a>
-            <a href="kuis_salah.php">
-                <button class="btn-grad my-3">D. salah</button>
-            </a>
+
+            <?php
+            $anss = array_merge($ans[1], $ans[0]);
+            shuffle($anss);
+            foreach($anss as $i){
+                $t = in_array($i, $ans[1]) ? "kuis_benar.php" : "kuis_salah.php";
+                echo "<button name='ansbuttons[]' class='btn-grad my-3' onclick='checkans(\"$i\")'>$i</button>";
+            }
+            ?>
         </div>
     </div>
+
+    <script>
+        var corr = document.getElementById("koreksi");
+        var anss = document.getElementsByName("ansbuttons[]");
+        const benar = '<img src="../images/benar.png" width="40px" height="40px"> Benar <a href="pilih_materi.php"><button class="btn-grad my-3" style="padding:8px 32px; width:fit-content;margin-left:50px">Selanjutnya</button></a>';
+        const salah = '<img src="../images/salah.png" width="40px" height="40px"> Salah <a href="pilih_materi.php"><button class="btn-grad my-3" style="padding:8px 32px; width:fit-content;margin-left:50px">Kembali</button></a>';
+        function checkans(ans){
+            var anstrue = <?php echo '['; foreach($ans[1] as $i) echo "'$i',"; echo ']'; ?>;
+            if(anstrue.includes(ans)){
+                corr.innerHTML = benar;
+            }
+            else{
+                corr.innerHTML = salah;
+            }
+            for(i = 0; i < anss.length; i++){
+                anss[i].disabled = true;
+            }
+        }
+    </script>
 </body>
 <?php include("../lib/footer.php"); ?>
