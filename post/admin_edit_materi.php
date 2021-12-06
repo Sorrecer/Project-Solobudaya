@@ -12,6 +12,6 @@ if (isset($_POST['tambah'])){
         }
     }
 
-    header("Location: ../admin/materi.php?id_provinsi=".$_GET['id_provinsi']);
+    header("Location: ../admin/materi.php?id_pulau=".$_GET['id_pulau']);
 }
 ?>

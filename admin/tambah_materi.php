@@ -57,7 +57,7 @@
                 <div class="container d-flex justify-content-center">
                     <h1>Tambah Materi</h1>
                 </div>
-                <form method="POST" class="container my-5" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]).'?id_provinsi='.$_GET['id_provinsi']; ?>" enctype="multipart/form-data">
+                <form method="POST" class="container my-5" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]).'?id_pulau='.$_GET['id_pulau']; ?>" enctype="multipart/form-data">
                     <div class="row g-3 justify-content-md-center">
                         <div class="col-md-6">
                             <div class="mb-4">
@@ -94,7 +94,7 @@
                             <button type="submit" class="btn btn-primary btn-lg mx-2" name="tambah" value="submit">Tambah</button>
                         </div>
                         <div class="form-group">
-                            <a href="materi.php?id_provinsi=<?php echo $_GET['id_provinsi']?>" class="btn btn-danger btn-lg mx-2">Batal</a>
+                            <a href="materi.php?id_pulau=<?php echo $_GET['id_pulau']?>" class="btn btn-danger btn-lg mx-2">Batal</a>
                         </div>
                     </div>
                 </form>

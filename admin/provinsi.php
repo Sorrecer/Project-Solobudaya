@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <div class="text-white" style="font-weight: bold; font-size: 25px;">Pilih Provinsi</div>
+                    <div class="text-white" style="font-weight: bold; font-size: 25px;">Pilih Pulau</div>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
@@ -64,11 +64,11 @@
         <table class="table align-middle table-light table-bordered table-hover">
             <thead>
                 <tr>
-                    <th>Provinsi</th>
+                    <th>Pulau</th>
                 </tr>
             </thead>
             <tbody>
-                <?php include('../get/admin_provinsi.php'); ?>
+                <?php include('../get/admin_pulau.php'); ?>
             </tbody>
         </table>
     </div>
