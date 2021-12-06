@@ -94,7 +94,7 @@
                             <button type="submit" class="btn btn-primary btn-lg mx-2" name="tambah" value="submit">Tambah</button>
                         </div>
                         <div class="form-group">
-                            <a href="materi.php" class="btn btn-danger btn-lg mx-2">Batal</a>
+                            <a href="materi.php?id_provinsi=<?php echo $_GET['id_provinsi']?>" class="btn btn-danger btn-lg mx-2">Batal</a>
                         </div>
                     </div>
                 </form>
