@@ -43,7 +43,7 @@
         <div class="row">
             <!-- kolom kiri -->
             <div class="column1 justify-content-center" style="width:50%;padding:50px;">
-                <a href="materi.php">
+                <a href="materi.php?id_pulau=<?php echo $_GET['id_pulau']?>&p=0">
                     <button class="materi" style="align-items: center; justify-content: center; margin-top:120px; transform: 200px; margin-left:190px"> MATERI <br>
                         <img src="../images/senjata.png" width="300" height="300" alt="">
                     </button>
