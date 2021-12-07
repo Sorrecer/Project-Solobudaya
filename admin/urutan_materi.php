@@ -29,11 +29,12 @@
 </head>
 
 <body>
+    <?php require('../validator/loginadmin_v.php'); ?>
+    <?php require('../get/admin_urutan_materi.php'); ?>
+    <?php require('../post/admin_save_urutan.php'); ?>
     <script>
         var urut, materi;
     </script>
-    <?php require('../validator/loginadmin_v.php'); ?>
-    <?php require('../get/admin_urutan_materi.php'); ?>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <ul class="navbar-nav">
@@ -65,25 +66,29 @@
     </table>
     <!-- Add Materi Button -->
     <div class="container d-flex flex-row-reverse mb-3">
-        <button class="btn btn-success">Tambah Urutan</button>
-    </div>
-    <!-- Tabel -->
-    <div class="table-responsive">
-        <table class="table align-middle table-light table-bordered table-hover">
-            <thead>
-                <tr>
-                    <th>Urutan</th>
-                    <th>ID</th>
-                    <th>Judul</th>
-                </tr>
-            </thead>
-            <tbody id="content">
-            </tbody>
-        </table>
+        <button class="btn btn-success" onclick="add()">Tambah Urutan</button>
     </div>
     <div class="container d-flex flex-row-reverse mb-3">
-        <button class="btn btn-success">Simpan Perubahan</button>
+        <button class="btn btn-success" onclick="remove()">Hapus Urutan</button>
     </div>
+    <!-- Tabel -->
+    <form method="POST">
+        <div class="table-responsive">
+            <table class="table align-middle table-light table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Urutan</th>
+                        <th id="label">Materi</th>
+                    </tr>
+                </thead>
+                <tbody id="content">
+                </tbody>
+            </table>
+        </div>
+        <div class="container d-flex flex-row-reverse mb-3">
+            <button type="submit" name="submit" value='save' class="btn btn-success">Simpan Perubahan</button>
+        </div>
+    </form>
 </div>
 <div class="container my-5"></div>
 
@@ -96,14 +101,29 @@
         for(i in urut){
             inner += "<tr>";
             inner += "<td>"+c+"</td>";
-            inner += "<td>"+urut[i]+"</td>";
-            inner += "<td><input list='materi_list' name='urutan[]' value="+urut[i]+"></td>";
+            inner += "<td><select list='materi_list' name='urutan[]' aria-labelledby='label'>"+materi+"</select></td>";
             inner += "</tr>";
-            c++
+            c++;
         }
         table.innerHTML = inner;
+
+        var urutan = document.getElementsByName("urutan[]");
+        for(i in urut){
+            for(j=0; j < urutan[i].length; j++){
+                urutan[i][j].selected = urutan[i][j].value == urut[i];
+            }
+        }
     }
     refresh();
+
+    function add(){
+        var n = table.children.length;
+        var A = table.insertRow();
+        A.innerHTML = "<td>"+n+"</td><td><select list='materi_list' name='urutan[]' aria-labelledby='label'>"+materi+"</select></td>"
+    }
+    function remove(){
+        table.lastChild.remove()
+    }
 </script>
 
 <?php include("../lib/footer.php"); ?>
