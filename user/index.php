@@ -123,10 +123,7 @@
                     <a href="buatakun.php">
                         <button class="btn btn-grad btn-center my-3">Buat Akun</button>
                     </a>
-                </div>    
-                <!-- <div>
-                    <a href="../post/login-admin.php" style="color: purple;">Login Admin Klik Disini!</a>
-                </div> -->
+                </div>
                 </div>
             </div>
         </div>

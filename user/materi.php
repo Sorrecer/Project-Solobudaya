@@ -1,13 +1,5 @@
-<!-- header -->
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="../ajax/script.js"></script>
+<?php include("../lib/header.php"); ?>
     <title>Materi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
         body {
             background-image: url('../images/bg3.png');
@@ -15,11 +7,9 @@
             background-attachment: fixed;
             background-size: 100% 130%;
         }
-
         .btn-grad {
             background-image: linear-gradient(to right, #000000 0%, #53346D 30%, #aa3bff 75%)
         }
-
         .btn-grad {
             margin: center;
             padding: 16px 48px;
@@ -32,25 +22,20 @@
             border-radius: 10px;
 
         }
-
         .btn-grad:hover {
             background-position: right center;
             color: #fff;
             text-decoration: none;
         }
-
         .column {
             width: 50%;
         }
-
         .column1 {
             width: 60%;
         }
-
         .column2 {
             width: 40%;
         }
-
         .materi {
             background-color: transparent;
             border-radius: 20px;
@@ -63,17 +48,21 @@
             width: auto;
         }
     </style>
-
 </head>
 
 <body>
-    <!-- header -->
+    <!-- navbar/header -->
     <nav class="navbar navbar-expand-md navbar-white bg-white">
-        <a class="navbar-brand" href="#">
-            <img src="../images/logo2.png" width="25" height="30" class="d-inline-block align-top" alt="" style="margin-left: 30px;">
+        <a class="navbar-brand" href="beranda.php">
+            <img src="../images/logo2.png" width="25" height="35" class="d-inline-block align-top" alt="" style="margin-left: 60px;">
         </a>
         <div class="text-dark" style="font-weight: bold; font-size: 25px;">Materi</div>
     </nav>
+    <div class="back-button">
+        <a href="pilih_materi.php">
+            <input type="image" src="../images/button_back.png" width="5%" style="position:absolute; top:90px; left:40px" alt="btn_back">
+        </a>
+    </div>
 
     <div class="container" style=" background-color: rgba(255, 255, 255, 0.5); padding:50px; height: fit-content">
         <div class="row">
@@ -93,5 +82,5 @@
             </a>
         </div>
     </div>
-</body>
+
 <?php include("../lib/footer.php"); ?>
