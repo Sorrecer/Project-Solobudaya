@@ -43,7 +43,7 @@
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
-                <a class="navbar-brand" href="../post/destroy_session.php">
+                <a class="navbar-brand" href="../admin/logout.php">
                     <button class="btn-grad2 btn-center" style="margin-right: 60px; ">Keluar</button>
                 </a>    
             </ul>
