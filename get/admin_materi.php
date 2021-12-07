@@ -4,8 +4,8 @@ $res = make_query("SELECT id_materi, judul_materi FROM materi");
 while($row = $res->fetch_object()){
     echo "
     <tr>
+    <td>$row->id_materi</td>
     <td>$row->judul_materi</td>
-    <td>Tarian Adat</td>
     <td><div class='d-grid gap-1'>
     <a href='edit_materi.php?id=$row->id_materi'><button class='btn btn-primary btn-sm'>Edit</button></a>
     <a href=''><form method='POST'><button type='submit' name='delete' value=$row->id_materi class='btn btn-danger btn-sm' onclick = 'return confirm (\"Apakah anda yakin ingin menghapus?\")'>Delete</button></form></a>

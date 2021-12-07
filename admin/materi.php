@@ -69,8 +69,8 @@
         <table class="table align-middle table-light table-bordered table-hover">
             <thead>
                 <tr>
+                    <th>ID</th>
                     <th>Judul</th>
-                    <th>Kategori</th>
                     <th>Action</th>
                 </tr>
             </thead>
