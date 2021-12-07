@@ -295,11 +295,8 @@
                             </a>
                         </div>
                         <div class="container" style="text-align: center; padding-top: 50px;">
-                            <img src="../images/p<?php require_once('../lib/db_login.php'); echo one_res("SELECT foto_profil FROM user WHERE id_user=".$_SESSION['id_akun'])->foto_profil?>.jpeg" width="40%" style="position:relative; top:0px; left:0px; border-radius:100%" alt="userprofile">
-                            <div style="font-weight: bold; padding-top:50px; font-size:30px">
-                            <?php require_once('../lib/db_login.php');
-                            $id = $_SESSION['id_akun'];
-                            echo one_res("SELECT nama_user from user WHERE id_user=$id")->nama_user;?></div>
+                            <img src="../images/p<?php echo $pp?>.jpeg" width="40%" style="position:relative; top:0px; left:0px; border-radius:100%" alt="userprofile">
+                            <div style="font-weight: bold; padding-top:50px; font-size:30px"><?php echo $name?></div>
                         </div>
                         <div class="container my-4" style="text-align: center; padding-top: 200px;">
 
