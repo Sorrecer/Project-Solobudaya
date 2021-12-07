@@ -108,6 +108,8 @@
     .column2 {
         float: right;
         width: 40%;
+        padding: 50px;
+        background-color: rgba(255, 255, 255, 0.2);
     }
 
     .rcorners1 {
@@ -248,7 +250,7 @@
         <div class="text-dark" style="font-weight: bold; font-size: 25px;">Beranda</div>
     </nav>
 
-    <div class="container" style="width: autopx;">
+    <div class="container" style="width: auto;">
         <!-- kolom kiri -->
         <div class="column1">
             <div class="row">
@@ -289,12 +291,12 @@
         </div>
 
         <!-- kolom kanan -->
-        <div class="column2" style="height: 100%; padding-top: 50px;">
+        <div class="column2" style="height: 100%;">
             <!-- form login -->
             <div style="font-size: 20px; color: purple;">
                 <div style=" background-image: linear-gradient(to bottom, rgba(251, 242, 255, 1 ) 0%, rgba(221, 172, 255, 1) 30%); padding:50px;">
                     <!-- isi kotak   -->
-                    <div class="container" style="background-color: rgba(255,255,255,0.2); border-radius:100px">
+                    <div class="container" style="background-color: rgba(255,255,255,0.2);border: 10px solid #e9c7ff; border-radius:100px">
                         <div class="container" style="text-align: center; padding-top:50px">
                             <a href="akun.php">
                                 <button class="btn btn-center" style="border:2px solid #ce85ff;background-color:rgba(221, 172, 255, 1);font-size: 20px; align-content: center; color:purple; border-radius: 10px">
@@ -313,10 +315,12 @@
                 </div>
             </div>
         </div>
-        <section>
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-            <div class="wave wave4"></div>
-        </section>
-        <?php include("../lib/footer.php"); ?>
+    </div>
+    </div>
+    <section>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
+    <?php include("../lib/footer.php"); ?>
