@@ -64,6 +64,27 @@
                     </a>
                 </div>
                 <div class="m-2 d-flex justify-content-center">
+                    <a href="provinsi.php?nav=materi">
+                        <button class="btn btn-success btn-lg">
+                            Urutan Materi
+                        </button>
+                    </a>
+                </div>
+                <div class="m-2 d-flex justify-content-center">
+                    <a href="">
+                        <button class="btn btn-success btn-lg" disabled>
+                            Daftar Kuis
+                        </button>
+                    </a>
+                </div>
+                <div class="m-2 d-flex justify-content-center">
+                    <a href="provinsi.php?nav=kuis">
+                        <button class="btn btn-success btn-lg">
+                            Urutan Kuis
+                        </button>
+                    </a>
+                </div>
+                <div class="m-2 d-flex justify-content-center">
                     <!-- <a href=""> -->
                         <button class="btn btn-success btn-lg" disabled>
                             Daftar Kategori
