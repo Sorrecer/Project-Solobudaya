@@ -7,17 +7,21 @@
         background-attachment: fixed;
         background-size: 100% 130%;
     }
+
     .column {
         width: 50%;
     }
+
     .column1 {
         float: left;
         width: 60%;
     }
+
     .column2 {
         float: right;
         width: 40%;
     }
+
     .rcorners1 {
         border-radius: 5px;
         background-image: linear-gradient(to bottom, rgba(251, 242, 255, 0.76) 0%, rgba(221, 172, 255, 0.6) 30%, rgba(191, 113, 255, 0.39) 75%);
@@ -25,6 +29,7 @@
         width: auto;
         height: auto;
     }
+
     .btn-grad {
         position: relative;
         display: inline-block;
@@ -40,59 +45,69 @@
         font-family: Verdana;
         background: #8502b909;
     }
+
     .btn-grad:hover {
         color: #ffffff;
         background: #3E065F;
         box-shadow: 0 0 10px #3E065F, 0 0 40px #3E065F, 0 0 80px #3E065F;
         transition-delay: 0.4s;
     }
-    a span{
-    position: absolute;
-    display: block;
+
+    a span {
+        position: absolute;
+        display: block;
     }
-    a span:nth-child(1){
+
+    a span:nth-child(1) {
         top: 0;
         left: -100%;
         width: 100%;
         height: 2px;
         background: linear-gradient(90deg, transparent, #3E065F);
     }
-    a:hover span:nth-child(1){
+
+    a:hover span:nth-child(1) {
         left: 100%;
         transition: 0.4s;
     }
-    a span:nth-child(3){
+
+    a span:nth-child(3) {
         bottom: 0;
         right: -100%;
         width: 100%;
         height: 2px;
         background: linear-gradient(270deg, transparent, #3E065F);
     }
-    a:hover span:nth-child(3){
+
+    a:hover span:nth-child(3) {
         right: 100%;
         transition: 0.4s;
         transition-delay: 0.2s;
     }
-    a span:nth-child(2){
+
+    a span:nth-child(2) {
         top: -100%;
         right: 0;
         width: 2px;
         height: 100%;
         background: linear-gradient(180deg, transparent, #3E065F);
     }
-    a:hover span:nth-child(2){
+
+    a:hover span:nth-child(2) {
         top: 100%;
         transition: 0.4s;
         transition-delay: 0.1s;
     }
-    a span:nth-child(4){
+
+    a span:nth-child(4) {
         bottom: -100%;
         left: 0;
         width: 2px;
         height: 100%;
         background: linear-gradient(360deg, transparent, #3E065F);
     }
-    a:hover span:nth-child(4){
+
+    a:hover span:nth-child(4) {
         bottom: 100%;
         transition: 0.4s;
         transition-delay: 0.3s;
@@ -147,23 +162,24 @@
             <div style="font-size: 20px; color: purple;">
                 <div style=" background-image: linear-gradient(to bottom, rgba(251, 242, 255, 1 ) 0%, rgba(221, 172, 255, 1) 30%); padding:50px">
                     <!-- isi kotak   -->
-                    <div class="container" style="text-align: center;padding-top:150px">
-                        <a href="akun.php">
-                            <button class="btn btn-info btn-center" style="font-size: 20px; align-content: center; color:white; border-radius: 10px">
-                                Pengaturan Akun
-                            </button>
-                        </a>
-                    </div>
-                    <div class="container" style="text-align: center; padding-top: 50px;">
-                        <img src="../images/profile.png" width="40%">
-                        <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan</div>
-                    </div>
-                    <div class="container my-4" style="text-align: center; padding-top: 150px;">
+                    <div class="container" style="background-color: rgba(255,255,255,0.2); border-radius:100px">
+                        <div class="container" style="text-align: center;padding-top:200px">
+                            <a href="akun.php">
+                                <button class="btn btn-center" style="border:2px solid black;background-color:rgba(221, 172, 255, 1);font-size: 20px; align-content: center; color:purple; border-radius: 10px">
+                                    Pengaturan Akun
+                                </button>
+                            </a>
+                        </div>
+                        <div class="container" style="text-align: center; padding-top: 50px;">
+                            <img src="../images/profile.png" width="40%">
+                            <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan</div>
+                        </div>
+                        <div class="container my-4" style="text-align: center; padding-top: 200px;">
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <?php include("../lib/footer.php"); ?>
+        <?php include("../lib/footer.php"); ?>
