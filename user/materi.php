@@ -68,16 +68,16 @@
         <div class="row">
             <!--ISI MATERI-->
             <?php
-            if (isset($_GET['id_materi'])) {
-                $id = $_GET['id_materi'];
-                include("../materi/$id.html");
+            require('../get/materi.php');
+            if (isset($materi)) {
+                include("../materi/$materi.html");
             } else {
-                die('what id_materi ?');
+                die('what materi?');
             }
             ?>
         </div>
         <div class="container my-5" style="text-align:right;">
-            <a href=" #">
+            <a href="../user/materi.php?id_pulau=<?php echo $_GET['id_pulau']?>&p=<?php echo $_GET['p']+1?>">
                 <button class="btn-grad">Berikutnya</button>
             </a>
         </div>
