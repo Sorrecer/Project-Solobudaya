@@ -66,7 +66,8 @@
     </div>
 
     <div class="container" style=" background-color: rgba(255, 255, 255, 0.5); padding:50px; height: fit-content">
-        <div class="row justify-content-center" style="font-weight:bolder; font-size: 40px;color: purple">Kuis 1 dari 5</div>
+        <div class="row justify-content-center" style="font-weight:bolder; font-size: 40px;color: purple">Kuis <?php echo $_GET['p']+1?> dari <?php 
+        require_once('../lib/db_login.php'); echo one_res("SELECT COUNT(*) AS co FROM urutan_kuis WHERE id_pulau=".$_GET['id_pulau'])->co?></div>
         <div class="row" style="margin-top: 200px;">
             <!--ISI MATERI-->
             <!--ISI MATERI-->
