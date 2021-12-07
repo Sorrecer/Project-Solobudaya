@@ -51,7 +51,7 @@
     </nav>
 
 <div class="container d-flex justify-content-center my-5 text-white">
-    <h1>Pilih Provinsi</h1>
+    <h1>Pilih Pulau</h1>
 </div>
 
 <!-- Content -->
