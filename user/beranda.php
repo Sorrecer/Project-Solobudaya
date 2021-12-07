@@ -157,10 +157,12 @@
 
 
     @keyframes animate1 {
-        0%{
+        0% {
             left: -100%;
         }
-        50%, 100%{
+
+        50%,
+        100% {
             left: 100%;
         }
     }
@@ -176,10 +178,12 @@
     }
 
     @keyframes animate3 {
-        0%{
+        0% {
             right: -100%;
         }
-        50%, 100%{
+
+        50%,
+        100% {
             right: 100%;
         }
     }
@@ -195,10 +199,12 @@
     }
 
     @keyframes animate2 {
-        0%{
+        0% {
             top: -100%;
         }
-        50%, 100%{
+
+        50%,
+        100% {
             top: 100%;
         }
     }
@@ -214,15 +220,17 @@
     }
 
     @keyframes animate4 {
-        0%{
+        0% {
             bottom: -100%;
         }
-        50%, 100%{
+
+        50%,
+        100% {
             bottom: 100%;
         }
     }
 
-    p{
+    p {
         font-family: 'Grenze Gotisch';
         font-size: 32px;
         color: #4a0563c9;
@@ -287,19 +295,19 @@
                 <div style=" background-image: linear-gradient(to bottom, rgba(251, 242, 255, 1 ) 0%, rgba(221, 172, 255, 1) 30%); padding:50px;">
                     <!-- isi kotak   -->
                     <div class="container" style="background-color: rgba(255,255,255,0.2); border-radius:100px">
-                        <div class="container" style="text-align: center;padding-top:200px">
+                        <div class="container" style="text-align: center; padding-top:50px">
                             <a href="akun.php">
                                 <button class="btn btn-center" style="border:2px solid #ce85ff;background-color:rgba(221, 172, 255, 1);font-size: 20px; align-content: center; color:purple; border-radius: 10px">
                                     Pengaturan Akun
                                 </button>
                             </a>
                         </div>
-                        <div class="container" style="text-align: center; padding-top: 50px;">
-                            <img src="../images/p<?php echo $pp?>.jpeg" width="40%" style="position:relative; top:0px; left:0px; border-radius:100%" alt="userprofile">
-                            <div style="font-weight: bold; padding-top:50px; font-size:30px"><?php echo $name?></div>
+                        <div class="container" style="text-align: center; padding-top: 20px;">
+                            <img src="../images/p<?php echo $pp ?>.jpeg" width="40%" style="position:relative; top:0px; left:0px; border-radius:100%" alt="userprofile">
+                            <div style="font-weight: bold; padding-top:20px; font-size:30px"><?php echo $name ?></div>
                         </div>
-                        <div class="container my-4" style="text-align: center; padding-top: 200px;">
-
+                        <div class="container my-4" style="text-align: center; padding-top: 50px;">
+                            <img src="../images/aaa.png" width="100%" height="100%">
                         </div>
                     </div>
                 </div>
@@ -311,4 +319,4 @@
             <div class="wave wave3"></div>
             <div class="wave wave4"></div>
         </section>
-    <?php include("../lib/footer.php"); ?>
+        <?php include("../lib/footer.php"); ?>
