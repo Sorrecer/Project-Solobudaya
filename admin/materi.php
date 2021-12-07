@@ -62,7 +62,7 @@
     </table>
     <!-- Add Materi Button -->
     <div class="container d-flex flex-row-reverse mb-3">
-        <a <?php echo 'href="tambah_materi.php?id_pulau='.$_GET['id_pulau'].'"'?> ><button class="btn btn-success">Tambah Materi</button></a>
+        <a href="tambah_materi.php" ><button class="btn btn-success">Tambah Materi</button></a>
     </div>
     <!-- Tabel -->
     <div class="table-responsive">
