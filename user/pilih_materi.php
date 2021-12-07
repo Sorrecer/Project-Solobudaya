@@ -39,7 +39,7 @@
     </div>
 
     <div class="container" style="width: autopx; background-color: rgba(255, 255, 255, 0.5); padding:50px; height: 1000px">
-        <div class="row justify-content-center" style="font-weight:bolder; font-size: 40px; color: purple">Materi Pulau Jawa</div>
+        <div class="row justify-content-center" style="font-weight:bolder; font-size: 40px; color: purple">Materi Pulau <?php require_once('../lib/db_login.php'); echo one_res("SELECT nama_pulau FROM pulau WHERE id_pulau=".$_GET['id_pulau'])->nama_pulau?></div>
         <div class="row">
             <!-- kolom kiri -->
             <div class="column1 justify-content-center" style="width:50%;padding:50px;">
