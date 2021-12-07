@@ -169,7 +169,6 @@
             <div style="font-size: 20px; color: purple;">
                 <div style=" background-image: linear-gradient(to bottom, rgba(251, 242, 255, 1 ) 0%, rgba(221, 172, 255, 1) 30%); padding:50px">
                     <!-- isi kotak   -->
-<<<<<<< HEAD
                     <div class="container" style="text-align: center;padding-top:150px">
                         <a href="akun.php">
                             <button class="btn btn-info btn-center" style="font-size: 20px; align-content: center; color:white; border-radius: 10px">
@@ -186,21 +185,6 @@
                         ?></div>
                     </div>
                     <div class="container my-4" style="text-align: center; padding-top: 150px;">
-=======
-                    <div class="container" style="background-color: rgba(255,255,255,0.2); border-radius:100px">
-                        <div class="container" style="text-align: center;padding-top:200px">
-                            <a href="akun.php">
-                                <button class="btn btn-center" style="border:2px solid black;background-color:rgba(221, 172, 255, 1);font-size: 20px; align-content: center; color:purple; border-radius: 10px">
-                                    Pengaturan Akun
-                                </button>
-                            </a>
-                        </div>
-                        <div class="container" style="text-align: center; padding-top: 50px;">
-                            <img src="../images/profile.png" width="40%">
-                            <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan</div>
-                        </div>
-                        <div class="container my-4" style="text-align: center; padding-top: 200px;">
->>>>>>> 994490aea042c2fffdbc18f4a482f0ffd5a5bb68
 
                         </div>
                     </div>
