@@ -129,16 +129,16 @@
         font-weight: bold;
         font-size: 28px;
         overflow: hidden;
-        transition: 0.1s;
+        transition: 0.5s;
         font-family: Verdana;
-        background: #8502b909;
+        /* background: #8502b909; */
     }
 
     .btn-grad:hover {
         color: #ffffff;
         background: #3E065F;
         box-shadow: 0 0 10px #3E065F, 0 0 40px #3E065F, 0 0 80px #3E065F;
-        transition-delay: 0.4s;
+        /* transition-delay: 0.4s; */
     }
 
     a span {
@@ -152,11 +152,17 @@
         width: 100%;
         height: 2px;
         background: linear-gradient(90deg, transparent, #3E065F);
+        animation: animate1 1s linear infinite;
     }
 
-    a:hover span:nth-child(1) {
-        left: 100%;
-        transition: 0.4s;
+
+    @keyframes animate1 {
+        0%{
+            left: -100%;
+        }
+        50%, 100%{
+            left: 100%;
+        }
     }
 
     a span:nth-child(3) {
@@ -165,12 +171,17 @@
         width: 100%;
         height: 2px;
         background: linear-gradient(270deg, transparent, #3E065F);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s;
     }
 
-    a:hover span:nth-child(3) {
-        right: 100%;
-        transition: 0.4s;
-        transition-delay: 0.2s;
+    @keyframes animate3 {
+        0%{
+            right: -100%;
+        }
+        50%, 100%{
+            right: 100%;
+        }
     }
 
     a span:nth-child(2) {
@@ -179,12 +190,17 @@
         width: 2px;
         height: 100%;
         background: linear-gradient(180deg, transparent, #3E065F);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
     }
 
-    a:hover span:nth-child(2) {
-        top: 100%;
-        transition: 0.4s;
-        transition-delay: 0.1s;
+    @keyframes animate2 {
+        0%{
+            top: -100%;
+        }
+        50%, 100%{
+            top: 100%;
+        }
     }
 
     a span:nth-child(4) {
@@ -193,14 +209,26 @@
         width: 2px;
         height: 100%;
         background: linear-gradient(360deg, transparent, #3E065F);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s;
     }
 
-    a:hover span:nth-child(4) {
-        bottom: 100%;
-        transition: 0.4s;
-        transition-delay: 0.3s;
+    @keyframes animate4 {
+        0%{
+            bottom: -100%;
+        }
+        50%, 100%{
+            bottom: 100%;
+        }
+    }
+
+    p{
+        font-family: 'Grenze Gotisch';
+        font-size: 32px;
+        color: #4a0563c9;
     }
 </style>
+<link href='https://fonts.googleapis.com/css?family=Grenze Gotisch' rel='stylesheet'>
 </head>
 
 <body>
@@ -220,14 +248,14 @@
                         <!-- gambar -->
                         <div>
                             <img class="sb" src="../images/sb1.png" width="250" height="60" class="d--block align-top" alt="">
-                            <p style="font-weight: bold;font-size:24px">
+                            <p style="font-weight: bold; margin: 1rem;">"
                                 <?php
                                 $myfile = fopen("../quotes.txt", "r") or die("Unable to open file!");
                                 $str = fread($myfile, filesize("../quotes.txt"));
                                 fclose($myfile);
                                 $arr = explode("\n", $str);
                                 shuffle($arr);
-                                echo $arr[0]; ?></p>
+                                echo $arr[0]; ?>"</p>
                         </div>
                     </div>
                 </div>
@@ -252,26 +280,25 @@
         </div>
 
         <!-- kolom kanan -->
-        <div class="column2" style="height: 100%;">
+        <div class="column2" style="height: 100%; padding-top: 50px;">
             <!-- form login -->
             <div style="font-size: 20px; color: purple;">
-                <div style=" background-image: linear-gradient(to bottom, rgba(251, 242, 255, 1 ) 0%, rgba(221, 172, 255, 1) 30%); padding:50px">
+                <div style=" background-image: linear-gradient(to bottom, rgba(251, 242, 255, 1 ) 0%, rgba(221, 172, 255, 1) 30%); padding:50px;">
                     <!-- isi kotak   -->
                     <div class="container" style="background-color: rgba(255,255,255,0.2); border-radius:100px">
                         <div class="container" style="text-align: center;padding-top:200px">
                             <a href="akun.php">
-                                <button class="btn btn-center" style="border:2px solid black;background-color:rgba(221, 172, 255, 1);font-size: 20px; align-content: center; color:purple; border-radius: 10px">
+                                <button class="btn btn-center" style="border:2px solid #ce85ff;background-color:rgba(221, 172, 255, 1);font-size: 20px; align-content: center; color:purple; border-radius: 10px">
                                     Pengaturan Akun
                                 </button>
                             </a>
                         </div>
                         <div class="container" style="text-align: center; padding-top: 50px;">
                             <img src="../images/p<?php require_once('../lib/db_login.php'); echo one_res("SELECT foto_profil FROM user WHERE id_user=".$_SESSION['id_akun'])->foto_profil?>.jpeg" width="40%" style="position:relative; top:0px; left:0px; border-radius:100%" alt="userprofile">
-                            <div style="font-weight: bold; padding-top:50px; font-size:30px"><?php
-                                                                                                require_once('../lib/db_login.php');
-                                                                                                $id = $_SESSION['id_akun'];
-                                                                                                echo one_res("SELECT nama_user from user WHERE id_user=$id")->nama_user;
-                                                                                                ?></div>
+                            <div style="font-weight: bold; padding-top:50px; font-size:30px">
+                            <?php require_once('../lib/db_login.php');
+                            $id = $_SESSION['id_akun'];
+                            echo one_res("SELECT nama_user from user WHERE id_user=$id")->nama_user;?></div>
                         </div>
                         <div class="container my-4" style="text-align: center; padding-top: 200px;">
 
@@ -286,4 +313,4 @@
             <div class="wave wave3"></div>
             <div class="wave wave4"></div>
         </section>
-        <?php include("../lib/footer.php"); ?>
+    <?php include("../lib/footer.php"); ?>
