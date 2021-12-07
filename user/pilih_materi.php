@@ -38,27 +38,24 @@
         </a>
     </div>
 
-    <div class="container" style="width: autopx; background-color: rgba(255, 255, 255, 0.5); padding:50px; height: 1200px">
-        <div class="row justify-content-center" style="font-weight:bolder; font-size: 40px;color: purple">Materi Budaya</div>
+    <div class="container" style="width: autopx; background-color: rgba(255, 255, 255, 0.5); padding:50px; height: 1000px">
+        <div class="row justify-content-center" style="font-weight:bolder; font-size: 40px; color: purple">Materi Pulau Jawa</div>
         <div class="row">
             <!-- kolom kiri -->
             <div class="column1 justify-content-center" style="width:50%;padding:50px;">
-                <a href="materi.php"> <button class="materi" style="transform: 200px; margin-left:190px"> TARI <br>
-                        <img src="../images/tari.png" width="300" height="300">
-                    </button></a>
-                <button class="materi" style="align-items: center; justify-content: center; margin-top:30px;margin-left:190px">COMING SOON<br>
-                    <img src=" ../images/coming.png" width="300" height="300">
-                </button>
-            </div>
-
-            <!-- kolom kanan -->
-            <div class="column2" style="width:50%;float:right;padding:50px;">
-                <a href="materi.php"><button class="materi" style="align-items: center; justify-content: center;"> SENJATA TRADISIONAL<br>
-                        <img src=" ../images/senjata.png" width="300" height="300">
-                    </button></a>
-                <a href="kuis.php"><button class="materi" style="align-items: center; justify-content: center; margin-top:30px;">KUIS MATERI<br>
-                        <img src=" ../images/kuis.png" width="300" height="300">
+                <a href="materi.php">
+                    <button class="materi" style="align-items: center; justify-content: center; margin-top:120px; transform: 200px; margin-left:190px"> MATERI <br>
+                        <img src="../images/senjata.png" width="300" height="300" alt="">
                     </button>
+                </a>
+            </div>
+            <!-- kolom kanan -->
+            <div class="column2 justify-content-center" style="width:50%;padding:50px;">
+                <a href="kuis.php">
+                    <button class="materi" style="align-items: center; justify-content: center; margin-top:120px;"> KUIS <br>
+                        <img src=" ../images/kuis.png" width="300" height="300" alt="">
+                    </button>
+                </a>
             </div>
         </div>
     </div>
