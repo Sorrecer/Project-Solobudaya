@@ -55,17 +55,21 @@ INSERT INTO `akun` (`id_akun`, `username`, `password`) VALUES
 DROP TABLE IF EXISTS `kuis`;
 CREATE TABLE IF NOT EXISTS `kuis` (
   `id_kuis` int(11) NOT NULL AUTO_INCREMENT,
-  `id_pulau` int(11) NOT NULL,
-  `jenis_kuis` char(2) DEFAULT NULL,
-  `urutan` int(11) NOT NULL,
+  `id_pulau` int(11) DEFAULT NULL,
+  `judul_kuis` varchar(30) DEFAULT NULL,
+  `urutan` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_kuis`),
   KEY `FK_kuis_pulau` (`id_pulau`),
   CONSTRAINT `FK_kuis_pulau` FOREIGN KEY (`id_pulau`) REFERENCES `pulau` (`id_pulau`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
--- Membuang data untuk tabel db_solbud.kuis: ~0 rows (lebih kurang)
+-- Membuang data untuk tabel db_solbud.kuis: ~3 rows (lebih kurang)
 DELETE FROM `kuis`;
 /*!40000 ALTER TABLE `kuis` DISABLE KEYS */;
+INSERT INTO `kuis` (`id_kuis`, `id_pulau`, `judul_kuis`, `urutan`) VALUES
+	(1, NULL, 'Tari Bedhaya', NULL),
+	(3, NULL, '456456', NULL),
+	(4, NULL, 'jfklds;fjaks', NULL);
 /*!40000 ALTER TABLE `kuis` ENABLE KEYS */;
 
 -- membuang struktur untuk table db_solbud.materi
@@ -84,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `materi` (
 DELETE FROM `materi`;
 /*!40000 ALTER TABLE `materi` DISABLE KEYS */;
 INSERT INTO `materi` (`id_materi`, `id_pulau`, `judul_materi`, `jenis_materi`) VALUES
-	(1, 3, 'ccccccccccccccccccccccccc', ''),
+	(1, 3, 'bukan cccccc', ''),
 	(6, 3, 'Tari Percintaan', '');
 /*!40000 ALTER TABLE `materi` ENABLE KEYS */;
 
@@ -208,9 +212,14 @@ CREATE TABLE IF NOT EXISTS `urutan_kuis` (
   CONSTRAINT `FK_urutan_kuis_pulau` FOREIGN KEY (`id_pulau`) REFERENCES `pulau` (`id_pulau`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Membuang data untuk tabel db_solbud.urutan_kuis: ~0 rows (lebih kurang)
+-- Membuang data untuk tabel db_solbud.urutan_kuis: ~4 rows (lebih kurang)
 DELETE FROM `urutan_kuis`;
 /*!40000 ALTER TABLE `urutan_kuis` DISABLE KEYS */;
+INSERT INTO `urutan_kuis` (`id_pulau`, `id_kuis`, `urutan`) VALUES
+	(3, 1, 0),
+	(3, 3, 1),
+	(3, 4, 2),
+	(3, 1, 3);
 /*!40000 ALTER TABLE `urutan_kuis` ENABLE KEYS */;
 
 -- membuang struktur untuk table db_solbud.urutan_materi
@@ -225,12 +234,15 @@ CREATE TABLE IF NOT EXISTS `urutan_materi` (
   CONSTRAINT `FK__pulau` FOREIGN KEY (`id_pulau`) REFERENCES `pulau` (`id_pulau`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Membuang data untuk tabel db_solbud.urutan_materi: ~1 rows (lebih kurang)
+-- Membuang data untuk tabel db_solbud.urutan_materi: ~5 rows (lebih kurang)
 DELETE FROM `urutan_materi`;
 /*!40000 ALTER TABLE `urutan_materi` DISABLE KEYS */;
 INSERT INTO `urutan_materi` (`id_pulau`, `id_materi`, `urutan`) VALUES
-	(3, 6, 1),
-	(3, 1, 2);
+	(1, 6, 0),
+	(1, 1, 1),
+	(1, 6, 2),
+	(1, 1, 3),
+	(3, 1, 0);
 /*!40000 ALTER TABLE `urutan_materi` ENABLE KEYS */;
 
 -- membuang struktur untuk table db_solbud.user
@@ -238,17 +250,18 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id_user` int(11) NOT NULL,
   `nama_user` varchar(30) DEFAULT '',
-  `foto_profil` blob DEFAULT NULL,
+  `foto_profil` int(11) DEFAULT NULL,
   `deskripsi` varchar(100) DEFAULT NULL,
+  `tgl_gabung` date DEFAULT NULL,
   KEY `FK_user_akun` (`id_user`),
   CONSTRAINT `FK_user_akun` FOREIGN KEY (`id_user`) REFERENCES `akun` (`id_akun`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Membuang data untuk tabel db_solbud.user: ~1 rows (lebih kurang)
+-- Membuang data untuk tabel db_solbud.user: ~0 rows (lebih kurang)
 DELETE FROM `user`;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` (`id_user`, `nama_user`, `foto_profil`, `deskripsi`) VALUES
-	(6, 'EEasadassfgfdgdfg', NULL, 'Sayasssgrdgdfg');
+INSERT INTO `user` (`id_user`, `nama_user`, `foto_profil`, `deskripsi`, `tgl_gabung`) VALUES
+	(6, 'EEasadassfgfdgdfg', 8, 'Sayasssgrdgdfg', '2021-12-07');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
