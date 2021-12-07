@@ -66,7 +66,7 @@
             <?php
             if (isset($_GET['id_kuis'])) {
                 $id = $_GET['id_kuis'];
-                include("../kuis/$id.html");
+                include("../kuis/$id.php");
             } else {
                 die('what id_kuis ?');
             }
