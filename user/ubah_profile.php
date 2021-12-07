@@ -36,6 +36,14 @@
 </head>
 
 <body>
+    <?php
+    if(isset($_POST['ubah'])){
+        require_once('../lib/db_login.php');
+        $p = $_POST['radio']; $id = $_SESSION['id_akun'];
+        make_query("UPDATE user SET foto_profil=$p WHERE id_user=$id");
+        header('Location: ../user/akun.php');
+    }
+    ?>
     <nav class="navbar navbar-expand-md navbar-white bg-white">
         <a class="navbar-brand" href="beranda.php">
             <img src="../images/logo2.png" width="25" height="35" class="d-inline-block align-top" alt="" style="margin-left: 60px;">
@@ -52,37 +60,38 @@
     <div class="container justify-content-center" style="text-align:center;font-weight:bolder;font-size: 50px; color:indigo;padding-top:50px">
         Pilih Foto Profil
     </div>
+    <form method="POST">
     <div class="container" style="padding: 20px;text-align:center">
         <div class="column">
             <label>
-                <input type="radio" name="radio" id="p1">
+                <input type="radio" name="radio" id="p1" value=1>
                 <img src="../images/p1.png" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
             </label>
             <label>
-                <input type="radio" name="radio" id="p2">
+                <input type="radio" name="radio" id="p2" value=2>
                 <img src="../images/p2.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
             </label>
             <label>
-                <input type="radio" name="radio" id="p3">
+                <input type="radio" name="radio" id="p3" value=3>
                 <img src="../images/p3.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
             </label>
             <label>
-                <input type="radio" name="radio" id="p4">
+                <input type="radio" name="radio" id="p4" value=4>
                 <img src="../images/p4.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
             </label>
         </div>
         <div class="column">
             <label>
-                <input type="radio" name="radio" id="p5">
+                <input type="radio" name="radio" id="p5" value=5>
                 <img src="../images/p5.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
             </label> <label>
-                <input type="radio" name="radio" id="p6">
+                <input type="radio" name="radio" id="p6" value=6>
                 <img src="../images/p6.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
             </label> <label>
-                <input type="radio" name="radio" id="p7">
+                <input type="radio" name="radio" id="p7" value=7>
                 <img src="../images/p7.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
             </label> <label>
-                <input type="radio" name="radio" id="p8">
+                <input type="radio" name="radio" id="p8" value=8>
                 <img src="../images/p8.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
             </label>
         </div>
@@ -96,6 +105,7 @@
             </div>
         </div>
     </div>
+    </form>
     </div>
 
 

@@ -84,7 +84,7 @@
             <!-- kolom kiri -->
             <div class="column1" style="background-color: rgba(255, 255, 255, 0.5); padding:50px; height: 1000px;">
                 <div class="container" style="text-align: center; padding-top: 50px; position: relative; top:0px; left:0px;">
-                    <img src="../images/profile.png" width="40%" style="position:relative; top:0px; left:0px;" alt="userprofile">
+                    <img src="../images/p<?php require_once('../lib/db_login.php'); echo one_res("SELECT foto_profil FROM user WHERE id_user=".$_SESSION['id_akun'])->foto_profil?>.jpeg" width="40%" style="position:relative; top:0px; left:0px; border-radius:100%" alt="userprofile">
                     <a href="ubah_profile.php">
                         <input type="image" src="../images/editprofilicon.png" width="12%" style="position:absolute; top:190px; left:310px;" alt="editprofilicon" name="test" class="btTxt submit" id="test" />
                     </a>
