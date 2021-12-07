@@ -1,100 +1,90 @@
 <?php include("../lib/header.php"); ?>
-<title>Pilih Peta</title>
-<style>
-    body {
-        background-image: url('../images/bg2.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 130%;
-    }
-
-    /* The Modal (background) */
-    .modal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        padding-top: 100px;
-        /* Location of the box */
-        left: 0;
-        top: 0;
-        width: auto;
-        /* Full width */
-        height: auto;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* Modal Content */
-    .modal-content {
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0);
-        width: 5%;
-        /* Full width */
-        height: 5%;
-        /* Full height */
-    }
-
-    .island-selected {
-        position: relative;
-        width: 150%;
-        height: 150%;
-    }
-
-    .sumatera {
-        position: relative;
-        top: 150px;
-        left: 0px;
-    }
-
-    .sumatera:hover {
-        width: 20%;
-        background: url('../images/sumatera-hover.png');
-        top: 150px;
-        left: 0px;
-    }
-
-    .jawa {
-        position: relative;
-        top: 290px;
-        left: -80px;
-    }
-
-    .kalimantan {
-        position: relative;
-        top: 130px;
-        left: -290px;
-    }
-
-    .sulawesi {
-        position: relative;
-        top: 150px;
-        left: -330px
-    }
-
-    .ntt {
-        position: relative;
-        top: 90px;
-        left: 150px;
-    }
-
-    .papua {
-        position: relative;
-        top: -25px;
-        left: 170px;
-    }
-</style>
+    <title>Pilih Peta</title>
+    <style>
+        body {
+            background-image: url('../images/bg2.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 130%;
+        }
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: auto;
+            /* Full width */
+            height: auto;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            align-items: center;
+            justify-content: center;
+        }
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0);
+            width: 5%;
+            /* Full width */
+            height: 5%;
+            /* Full height */
+        }
+        .island-selected {
+            position: relative;
+            width: 150%;
+            height: 150%;
+        }
+        .sumatera {
+            position: relative;
+            top: 150px;
+            left: 0px;
+        }
+        /* .sumatera:hover {
+            width: 20%;
+            background: url('../images/sumatera-hover.png');
+            top: 150px;
+            left: 0px;
+        } */
+        .jawa {
+            position: relative;
+            top: 290px;
+            left: -80px;
+        }
+        .kalimantan {
+            position: relative;
+            top: 130px;
+            left: -290px;
+        }
+        .sulawesi {
+            position: relative;
+            top: 150px;
+            left: -330px
+        }
+        .ntt {
+            position: relative;
+            top: 90px;
+            left: 150px;
+        }
+        .papua {
+            position: relative;
+            top: -25px;
+            left: 170px;
+        }
+    </style>
 </head>
 
 <body>
