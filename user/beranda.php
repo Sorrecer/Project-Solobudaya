@@ -7,21 +7,17 @@
         background-attachment: fixed;
         background-size: 100% 130%;
     }
-
     .column {
         width: 50%;
     }
-
     .column1 {
         float: left;
         width: 60%;
     }
-
     .column2 {
         float: right;
         width: 40%;
     }
-
     .rcorners1 {
         border-radius: 5px;
         background-image: linear-gradient(to bottom, rgba(251, 242, 255, 0.76) 0%, rgba(221, 172, 255, 0.6) 30%, rgba(191, 113, 255, 0.39) 75%);
@@ -29,27 +25,77 @@
         width: auto;
         height: auto;
     }
-
     .btn-grad {
-        background-image: linear-gradient(to right, #000000 0%, #53346D 30%, #aa3bff 75%)
-    }
-
-    .btn-grad {
-        margin: center;
-        padding: 8px 32px;
-        text-align: center;
-        font-weight: bold;
-        transition: 0.4s;
-        background-size: 250% auto;
-        color: white;
-        border-radius: 10px;
-
-    }
-
-    .btn-grad:hover {
-        background-position: right center;
-        color: #fff;
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: #3E065F;
+        /* text-transform: uppercase; */
+        letter-spacing: 1px;
         text-decoration: none;
+        font-weight: bold;
+        font-size: 28px;
+        overflow: hidden;
+        transition: 0.1s;
+        font-family: Verdana;
+        background: #8502b909;
+    }
+    .btn-grad:hover {
+        color: #ffffff;
+        background: #3E065F;
+        box-shadow: 0 0 10px #3E065F, 0 0 40px #3E065F, 0 0 80px #3E065F;
+        transition-delay: 0.4s;
+    }
+    a span{
+    position: absolute;
+    display: block;
+    }
+    a span:nth-child(1){
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #3E065F);
+    }
+    a:hover span:nth-child(1){
+        left: 100%;
+        transition: 0.4s;
+    }
+    a span:nth-child(3){
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #3E065F);
+    }
+    a:hover span:nth-child(3){
+        right: 100%;
+        transition: 0.4s;
+        transition-delay: 0.2s;
+    }
+    a span:nth-child(2){
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #3E065F);
+    }
+    a:hover span:nth-child(2){
+        top: 100%;
+        transition: 0.4s;
+        transition-delay: 0.1s;
+    }
+    a span:nth-child(4){
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #3E065F);
+    }
+    a:hover span:nth-child(4){
+        bottom: 100%;
+        transition: 0.4s;
+        transition-delay: 0.3s;
     }
 </style>
 </head>
@@ -76,10 +122,12 @@
                     </div>
                 </div>
                 <div class="container" style="text-align: center">
-                    <a href="pilih_peta.php">
-                        <button class="btn btn-grad btn-center" style="font-size: 30px; align-content: center;">
-                            MULAI BELAJAR
-                        </button>
+                    <a href="pilih_peta.php" class="btn-grad">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        MULAI BELAJAR
                     </a>
                 </div>
             </div>
