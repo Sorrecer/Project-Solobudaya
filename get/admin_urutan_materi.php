@@ -9,9 +9,9 @@ while($row = $res->fetch_object()){
 echo "];</script>";
 
 $res = make_query("SELECT id_materi, judul_materi FROM materi");
-echo "<datalist id='materi_list name='materi_list'>";
+echo "<script>var materi='";
 while($row = $res->fetch_object()){
-    echo "<option value=$row->id_materi>$row->id_materi : $row->judul_materi<option>";
+    echo "<option value=$row->id_materi>$row->id_materi : $row->judul_materi</option>";
 }
-echo "</datalist>";
+echo "'</script>";
 ?>
