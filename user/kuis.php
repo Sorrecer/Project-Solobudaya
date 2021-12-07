@@ -69,8 +69,14 @@
         <div class="row justify-content-center" style="font-weight:bolder; font-size: 40px;color: purple">Kuis 1 dari 5</div>
         <div class="row" style="margin-top: 200px;">
             <!--ISI MATERI-->
+            <!--ISI MATERI-->
             <?php
-            include("../kuis/1.php");
+            require('../get/kuis.php');
+            if (isset($kuis)) {
+                include("../kuis/$kuis.php");
+            } else {
+                die('what kuis?');
+            }
             ?>
         </div>
         <!-- KOREKSI -->
@@ -95,8 +101,8 @@
     <script>
         var corr = document.getElementById("koreksi");
         var anss = document.getElementsByName("ansbuttons[]");
-        const benar = '<img src="../images/benar.png" width="40px" height="40px"> Benar <a href="pilih_materi.php"><button class="btn-grad my-3" style="padding:8px 32px; width:fit-content;margin-left:50px">Selanjutnya</button></a>';
-        const salah = '<img src="../images/salah.png" width="40px" height="40px"> Salah <a href="pilih_materi.php"><button class="btn-grad my-3" style="padding:8px 32px; width:fit-content;margin-left:50px">Kembali</button></a>';
+        const benar = '<img src="../images/benar.png" width="40px" height="40px"> Benar <a href="kuis.php?id_pulau=<?php echo $_GET['id_pulau']?>&p=<?php echo $_GET['p']+1?>"><button class="btn-grad my-3" style="padding:8px 32px; width:fit-content;margin-left:50px">Selanjutnya</button></a>';
+        const salah = '<img src="../images/salah.png" width="40px" height="40px"> Salah <a href="pilih_materi.php?id_pulau=<?php echo $_GET['id_pulau']?>"><button class="btn-grad my-3" style="padding:8px 32px; width:fit-content;margin-left:50px">Kembali</button></a>';
         function checkans(ans){
             var anstrue = <?php echo '['; foreach($ans[1] as $i) echo "'$i',"; echo ']'; ?>;
             if(anstrue.includes(ans)){
