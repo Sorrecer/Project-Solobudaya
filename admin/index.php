@@ -71,8 +71,8 @@
                     </a>
                 </div>
                 <div class="m-2 d-flex justify-content-center">
-                    <a href="">
-                        <button class="btn btn-success btn-lg" disabled>
+                    <a href="kuis.php">
+                        <button class="btn btn-success btn-lg">
                             Daftar Kuis
                         </button>
                     </a>
