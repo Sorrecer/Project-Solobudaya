@@ -65,7 +65,6 @@
                                 <div class="input-group mb-3">
                                     <input type="file" class="form-control" id="file_kuis" name="file_kuis">
                                 </div>
-                                <div class="text-danger"><?php if (isset($error_cover)) {echo $error_cover;} ?></div>
                             </div>
                         </div>
                     </div>
@@ -73,25 +72,15 @@
                         <div class="col-md-6">
                             <div class="mb-4">
                                 <label for="judul" class="form-label">Judul</label>
-                                <input type="text" class="form-control" id="judul" name="judul">
-                                <div class="text-danger"><?php if (isset($error_judul)) {echo $error_judul;} ?></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-3 justify-content-md-center">
-                        <div class="col-md-6">
-                            <div class="mb-4">
-                                <label for="idkategori" class="form-label">Kategori</label>
-                                <select class="form-select" id="kategori" name="kategori" aria-label="Default select example">
-                                    <option selected value="">Pilih Kategori..</option>
-                                </select>
-                                <div class="text-danger"><?php if (isset($error_kategori)) {echo $error_kategori;} ?></div>
+                                <input type="text" class="form-control" id="judul" name="judul" value="<?php
+                                require_once("../lib/db_login.php");
+                                echo one_res("SELECT judul_kuis FROM kuis WHERE id_kuis=".$_GET['id'])->judul_kuis;?>">
                             </div>
                         </div>
                     </div>
                     <div class="container d-flex justify-content-center">
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-lg mx-2" name="tambah" value="submit">Tambah</button>
+                            <button type="submit" class="btn btn-primary btn-lg mx-2" name="tambah" value="submit">Ubah</button>
                         </div>
                         <div class="form-group">
                             <a href="kuis.php" class="btn btn-danger btn-lg mx-2">Batal</a>
