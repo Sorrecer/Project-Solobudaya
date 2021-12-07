@@ -85,9 +85,9 @@
                     </a>
                 </div>
                 <div class="m-2 d-flex justify-content-center">
-                    <!-- <a href=""> -->
-                        <button class="btn btn-success btn-lg" disabled>
-                            Daftar Kategori
+                    <a href="gambar.php">
+                        <button class="btn btn-success btn-lg">
+                            Daftar Gambar
                         </button>
                     </a>
                 </div>
