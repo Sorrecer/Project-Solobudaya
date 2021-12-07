@@ -117,7 +117,14 @@
                         <!-- gambar -->
                         <div>
                             <img class="sb" src="../images/sb1.png" width="250" height="60" class="d--block align-top" alt="">
-                            <p style="font-weight: bold;font-size:24px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p style="font-weight: bold;font-size:24px">
+                            <?php 
+                            $myfile = fopen("../quotes.txt", "r") or die("Unable to open file!");
+                            $str = fread($myfile,filesize("../quotes.txt"));
+                            fclose($myfile);
+                            $arr = explode("\n", $str);
+                            shuffle($arr);
+                            echo $arr[0]; ?></p>
                         </div>
                     </div>
                 </div>
@@ -156,7 +163,11 @@
                     </div>
                     <div class="container" style="text-align: center; padding-top: 50px;">
                         <img src="../images/profile.png" width="40%">
-                        <div style="font-weight: bold; padding-top:50px; font-size:30px">Tsaqif Muhammad Arkan</div>
+                        <div style="font-weight: bold; padding-top:50px; font-size:30px"><?php
+                        require_once('../lib/db_login.php');
+                        $id = $_SESSION['id_akun'];
+                        echo one_res("SELECT nama_user from user WHERE id_user=$id")->nama_user;
+                        ?></div>
                     </div>
                     <div class="container my-4" style="text-align: center; padding-top: 150px;">
 
