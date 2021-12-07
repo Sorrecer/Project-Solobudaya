@@ -29,8 +29,11 @@
 </head>
 
 <body>
+    <script>
+        var urut, materi;
+    </script>
     <?php require('../validator/loginadmin_v.php'); ?>
-    <?php require('../post/admin_delete_materi.php'); ?>
+    <?php require('../get/admin_urutan_materi.php'); ?>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <ul class="navbar-nav">
@@ -62,24 +65,45 @@
     </table>
     <!-- Add Materi Button -->
     <div class="container d-flex flex-row-reverse mb-3">
-        <a href="tambah_materi.php" ><button class="btn btn-success">Tambah Materi</button></a>
+        <button class="btn btn-success">Tambah Urutan</button>
     </div>
     <!-- Tabel -->
     <div class="table-responsive">
         <table class="table align-middle table-light table-bordered table-hover">
             <thead>
                 <tr>
+                    <th>Urutan</th>
+                    <th>ID</th>
                     <th>Judul</th>
-                    <th>Kategori</th>
-                    <th>Action</th>
                 </tr>
             </thead>
-            <tbody>
-                <?php include('../get/admin_materi.php'); ?>
+            <tbody id="content">
             </tbody>
         </table>
     </div>
+    <div class="container d-flex flex-row-reverse mb-3">
+        <button class="btn btn-success">Simpan Perubahan</button>
+    </div>
 </div>
 <div class="container my-5"></div>
+
+<script>
+    var table = document.getElementById("content");
+
+    function refresh(){
+        inner = "";
+        c = 0;
+        for(i in urut){
+            inner += "<tr>";
+            inner += "<td>"+c+"</td>";
+            inner += "<td>"+urut[i]+"</td>";
+            inner += "<td><input list='materi_list' name='urutan[]' value="+urut[i]+"></td>";
+            inner += "</tr>";
+            c++
+        }
+        table.innerHTML = inner;
+    }
+    refresh();
+</script>
 
 <?php include("../lib/footer.php"); ?>
