@@ -11,6 +11,6 @@
     </div>
 
 <?php 
-    $ans[1] = ['benar'];
-    $ans[0] = ['salah0', 'salah1', 'salah2'];
+    $ans[1] = ['benar', 'benar2'];
+    $ans[0] = ['salah0', 'salah1', 'salah2', 'salah3'];
 ?>
