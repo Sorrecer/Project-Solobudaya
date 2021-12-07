@@ -104,12 +104,12 @@
     <div class="container justify-content-center" style="text-align:center;font-weight:bolder;font-size: 50px; color:indigo;padding-top:50px">
         PILIH DAN MULAI BELAJAR!
         <div>
-            <a name="sumatera" href="pilih_materi.php"><img class="sumatera" src="../images/sumatera.png" width="20%"></a>
-            <a name="jawa" href="pilih_materi.php"><img class="jawa" src="../images/jawa.png" width="20%"></a>
-            <a name="kalimantan" href="pilih_materi.php"><img class="kalimantan" src="../images/kalimantan.png" width="20%"></a>
-            <a name="sulawesi" href="pilih_materi.php"><img class="sulawesi" src="../images/sulawesi.png" width="20%"></a>
-            <a name="ntt" href="pilih_materi.php"><img class="ntt" src="../images/ntt.png" width="20%"></a>
-            <a name="papua" href="pilih_materi.php"><img class="papua" src="../images/papua.png" width="20%"></a>
+            <a name="sumatera" href="pilih_materi.php?id_pulau=1"><img class="sumatera" src="../images/sumatera.png" width="20%"></a>
+            <a name="jawa" href="pilih_materi.php?id_pulau=3"><img class="jawa" src="../images/jawa.png" width="20%"></a>
+            <a name="kalimantan" href="pilih_materi.php?id_pulau=2"><img class="kalimantan" src="../images/kalimantan.png" width="20%"></a>
+            <a name="sulawesi" href="pilih_materi.php?id_pulau=4"><img class="sulawesi" src="../images/sulawesi.png" width="20%"></a>
+            <a name="ntt" href="pilih_materi.php?id_pulau=5"><img class="ntt" src="../images/ntt.png" width="20%"></a>
+            <a name="papua" href="pilih_materi.php?id_pulau=6"><img class="papua" src="../images/papua.png" width="20%"></a>
         </div>
     </div>
 
