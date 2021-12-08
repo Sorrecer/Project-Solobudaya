@@ -1,8 +1,8 @@
 <div class="column1" style="font-size: 25px;font-weight: bold; align-items: center;justify-content: center;">
-    <h1>Tari Bedhaya</h1>
+    <h1>Tari</h1>
 
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+    <p>Gambar berikut merupakan tari tradisional yang berasal dari Jawa Tengah bernama ...</p>
 
     </div>
 
@@ -11,6 +11,6 @@
     </div>
 
 <?php 
-    $ans[1] = ['benar', 'benar2'];
-    $ans[0] = ['salah0', 'salah1', 'salah2', 'salah3'];
+    $ans[1] = ['Bedhaya'];
+    $ans[0] = ['Kecak', 'Gong', 'Tambun Bungai'];
 ?>
