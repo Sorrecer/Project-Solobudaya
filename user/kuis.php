@@ -74,8 +74,8 @@
 
     <div class="container" style=" background-color: rgba(255, 255, 255, 0.5); padding:50px; height: fit-content">
         <div class="row justify-content-center" style="font-weight:bolder; font-size: 40px;color: purple">Kuis <?php echo $_GET['p'] + 1 ?> dari <?php
-                                                                                                                                                require_once('../lib/db_login.php');
-                                                                                                                                                echo one_res("SELECT COUNT(*) AS co FROM urutan_kuis WHERE id_pulau=" . $_GET['id_pulau'])->co ?></div>
+                                                                                                                                                    require_once('../lib/db_login.php');
+                                                                                                                                                    echo one_res("SELECT COUNT(*) AS co FROM urutan_kuis WHERE id_pulau=" . $_GET['id_pulau'])->co ?></div>
         <div class="row" style="margin-top: 200px;">
             <!--ISI MATERI-->
             <!--ISI MATERI-->
@@ -89,8 +89,7 @@
             ?>
         </div>
         <!-- KOREKSI -->
-        <div class="container my-5;" style="height:40px;text-align: center;margin-top: 100px; font-weight:bold;font-size:30px; color:green">
-
+        <div class="container my-5;" style="text-align: center;margin-top: 100px; font-weight:bold;font-size:30px; color:green" id="koreksi">
         </div>
         <div class="container" style="background-color:rgba(92, 47, 161, 0.2); text-align: center;">
 
