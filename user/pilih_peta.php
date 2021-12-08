@@ -7,58 +7,23 @@
             background-attachment: fixed;
             background-size: 100% 130%;
         }
-        /* The Modal (background) */
-        .modal {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            padding-top: 100px;
-            /* Location of the box */
-            left: 0;
-            top: 0;
-            width: auto;
-            /* Full width */
-            height: auto;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-            align-items: center;
-            justify-content: center;
+
+        .island {
+            /* opacity: 50%; */
+            transform: scale(1,1);
         }
-        /* Modal Content */
-        .modal-content {
-            position: relative;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0);
-            width: 5%;
-            /* Full width */
-            height: 5%;
-            /* Full height */
+
+        .island:hover {
+            /* opacity: 100%; */
+            transform: scale(1.5,1.5);
         }
-        .island-selected {
-            position: relative;
-            width: 150%;
-            height: 150%;
-        }
+
         .sumatera {
             position: relative;
             top: 150px;
             left: 0px;
         }
-        /* .sumatera:hover {
-            width: 20%;
-            background: url('../images/sumatera-hover.png');
-            top: 150px;
-            left: 0px;
-        } */
+        
         .jawa {
             position: relative;
             top: 290px;
@@ -104,40 +69,13 @@
     <div class="container justify-content-center" style="text-align:center;font-weight:bolder;font-size: 50px; color:indigo;padding-top:50px">
         PILIH DAN MULAI BELAJAR!
         <div>
-            <a name="sumatera" href="pilih_materi.php?id_pulau=1"><img class="sumatera" src="../images/sumatera.png" width="20%"></a>
-            <a name="jawa" href="pilih_materi.php?id_pulau=3"><img class="jawa" src="../images/jawa.png" width="20%"></a>
-            <a name="kalimantan" href="pilih_materi.php?id_pulau=2"><img class="kalimantan" src="../images/kalimantan.png" width="20%"></a>
-            <a name="sulawesi" href="pilih_materi.php?id_pulau=4"><img class="sulawesi" src="../images/sulawesi.png" width="20%"></a>
-            <a name="ntt" href="pilih_materi.php?id_pulau=5"><img class="ntt" src="../images/ntt.png" width="20%"></a>
-            <a name="papua" href="pilih_materi.php?id_pulau=6"><img class="papua" src="../images/papua.png" width="20%"></a>
+            <a name="sumatera" href="pilih_materi.php?id_pulau=1"><img class="island sumatera" src="../images/sumatera.png" width="20%" alt=""></a>
+            <a name="jawa" href="pilih_materi.php?id_pulau=3"><img class="island jawa" src="../images/jawa.png" width="20%" alt=""></a>
+            <a name="kalimantan" href="pilih_materi.php?id_pulau=2"><img class="island kalimantan" src="../images/kalimantan.png" width="20%" alt=""></a>
+            <a name="sulawesi" href="pilih_materi.php?id_pulau=4"><img class="island sulawesi" src="../images/sulawesi.png" width="20%" alt=""></a>
+            <a name="ntt" href="pilih_materi.php?id_pulau=5"><img class="island ntt" src="../images/ntt.png" width="20%" alt=""></a>
+            <a name="papua" href="pilih_materi.php?id_pulau=6"><img class="island papua" src="../images/papua.png" width="20%" alt=""></a>
         </div>
     </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content" id="modalContent">
-            <p>Some text in the Modal..</p>
-        </div>
-    </div>
-
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        var content = document.getElementById("modalContent");
-
-        // When the user clicks the button, open the modal 
-        function open_island(island) {
-            modal.innerHTML = '<img class="island-selected" src="../images/' + island.name + '.png" width=20%>';
-            modal.style.display = 'block';
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
     <?php include("../lib/footer.php"); ?>
