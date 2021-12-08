@@ -59,7 +59,7 @@
         <div class="text-dark" style="font-weight: bold; font-size: 25px;">Materi</div>
     </nav>
     <div class="back-button">
-        <a href="pilih_materi.php">
+        <a href="pilih_materi.php?id_pulau=<?php echo $_GET['id_pulau']?>">
             <input type="image" src="../images/button_back.png" width="5%" style="position:absolute; top:90px; left:40px" alt="btn_back">
         </a>
     </div>
