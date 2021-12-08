@@ -7,7 +7,7 @@ if (isset($_POST['tambah'])){
     make_query("UPDATE kuis SET judul_kuis='$judul' WHERE id_kuis=$id");
 
     if($_FILES["file_kuis"]['name'] != ''){
-        if (!move_uploaded_file($_FILES["file_kuis"]["tmp_name"], '../kuis/'.$db->insert_id.'.php')) {
+        if (!move_uploaded_file($_FILES["file_kuis"]["tmp_name"], '../kuis/'.$id.'.php')) {
             echo "Sorry, there was an error uploading your file.";
         }
     }
