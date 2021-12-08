@@ -28,8 +28,7 @@
     </style>
 </head>
 
-<body>
-    <?php require('../validator/loginadmin_v.php'); ?>    
+<body> 
     <?php require('../post/admin_delete_gambar.php'); ?>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">

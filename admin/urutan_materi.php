@@ -29,7 +29,6 @@
 </head>
 
 <body>
-    <?php require('../validator/loginadmin_v.php'); ?>
     <?php require('../get/admin_urutan_materi.php'); ?>
     <?php require('../post/admin_save_urutan_materi.php'); ?>
     <script>
