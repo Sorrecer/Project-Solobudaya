@@ -2,11 +2,10 @@
     <title>Login</title>
     <style>
         body {
-            background-image: url('../images/bg1.png');
+            background-image: url('../images/BGFix2.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-size: 110% 140%;
-            background-position: -10px -10px;
+            background-size: 100% 100%;
         }
         .column {
             float: right;
@@ -87,7 +86,7 @@
             <div class="container d-grid my-1" style="font-size: 70px; left :auto;"><b> Mengenal Budaya <br>Indonesia dengan<br> Menyenangkan</b>
             </div>
             <div>
-                <img src="../images/peta1.png" width="700" height="280" class="d--block align-top" alt="">
+                <img src="../images/petaborderbright.png" width="700" height="280" class="d--block align-top" alt="">
             </div>
         </div>
     </div>
