@@ -65,7 +65,7 @@
         <div class="column">
             <label>
                 <input type="radio" name="radio" id="p1" value=1>
-                <img src="../images/p1.png" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
+                <img src="../images/p1.jpeg" width="200" height="200" alt="" style="padding: 20px; border-radius:50%">
             </label>
             <label>
                 <input type="radio" name="radio" id="p2" value=2>
