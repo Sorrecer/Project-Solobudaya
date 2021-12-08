@@ -2,7 +2,7 @@
 <title>Beranda</title>
 <style>
     body {
-        background-image: url('../images/bg3.png');
+        background-image: url('../images/bg4.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 130%;
@@ -255,7 +255,7 @@
         <div class="column1">
             <div class="row">
                 <div class="column" style="text-align:center; width: 100%; height: auto;padding:50px">
-                    <div class="rcorners1">
+                    <div class="rcorners1" style="border-radius:20px">
                         <!-- gambar -->
                         <div>
                             <img class="sb" src="../images/sb1.png" width="250" height="60" class="d--block align-top" alt="">
