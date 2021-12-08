@@ -134,7 +134,7 @@
                     <a href="../user/logout.php">
                         <button class="btn-grad2 btn-center" style="font-size: 30px; align-content: center; width:80%">
                             Keluar
-                            <img src=" ../images/logo-pintu.png" height="35px" width="25px" style="" alt="logouticon">
+                            <img src=" ../images/logo-pintu.png" height="35px" width="25px" alt="logouticon">
                         </button>
                     </a>
                 </div>
