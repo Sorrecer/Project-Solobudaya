@@ -29,7 +29,6 @@
 </head>
 
 <body>
-    <?php require('../validator/loginadmin_v.php'); ?>
     <?php require('../get/admin_urutan_kuis.php'); ?>
     <?php require('../post/admin_save_urutan_kuis.php'); ?>
     <script>

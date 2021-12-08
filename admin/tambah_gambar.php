@@ -29,7 +29,6 @@
 </head>
 
 <body>
-    <?php require('../validator/loginadmin_v.php'); ?>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <ul class="navbar-nav">
